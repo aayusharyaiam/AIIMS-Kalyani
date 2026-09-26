@@ -52,7 +52,7 @@ export default function LoginPage() {
 
             <div className="relative my-7 flex flex-col gap-4">
               <div className="inline-block">
-                <p className="font-cinzel text-xs text-[#D4AF37] tracking-[0.24em] font-bold uppercase">// THE GATES OF OLYMPUS // ODYSSEY 2026</p>
+                <p className="font-cinzel text-xs text-[#D4AF37] tracking-[0.24em] font-bold uppercase">{"// THE GATES OF OLYMPUS // ODYSSEY 2026"}</p>
                 <h2 className="font-cinzel text-3xl sm:text-4xl text-on-surface font-extrabold mt-1 leading-tight tracking-wide">
                   Cross the Threshold,<br/>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFF2A3] via-[#D4AF37] to-[#7BD0FF]">Voyager.</span>
@@ -163,7 +163,7 @@ export default function LoginPage() {
                   <div className="flex flex-col gap-1 mb-4">
                     <div className="flex items-center justify-between">
                       <span className="inline-flex items-center gap-1.5 text-xs text-[#D4AF37] font-cinzel font-bold tracking-[0.2em] uppercase">
-                        SEEKER'S ACCESS
+                        SEEKER&apos;S ACCESS
                       </span>
                       <Shield className="text-[#7BD0FF] w-5 h-5" />
                     </div>

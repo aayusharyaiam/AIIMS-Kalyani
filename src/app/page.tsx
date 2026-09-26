@@ -2,12 +2,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0c10]/85 backdrop-blur-xl border-b border-primary/25 shadow-[0_4px_30px_rgba(0,0,0,0.85)]"><div className="h-20 w-full px-gutter-mobile lg:px-margin flex items-center justify-between gap-space-md"><div className="flex items-center gap-space-sm"><a className="flex items-center gap-3 group" href="#"><img alt="Odyssey Greek Mythology Emblem Logo" className="h-11 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1Ue3PAJ7JV2m9P92IpdZxHnO4hmQzHDNyTW8XHWx2glR93l6i2QIKMMqq0JQR0cdDXg8urOVp35-W1ecJFpBFuWUN3Yhb6LcjgzbtgaUYwzKbY1pQOpjPe6wpYBdKXdWZusOCy-T2Cd1KDTII__OWj2JrhYBbuEfDh_OJOquxiU75hOUcxPeUUIGS4oHG5bsnFStBC0litjPjGgjX9zlbxB3zdgo7jRwS4VBiUVOCf3wOwqoSFIKcSiGBg"/></a></div><nav className="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary border-b-2 border-primary-container font-semibold pb-1"><a aria-current="page" className="transition-colors duration-200 text-primary border-b-2 border-primary-container font-semibold pb-1 tracking-wider text-label-md uppercase font-label-md" data-path="home" href="#">Sanctuary</a><a className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="events" href="#destinations">Agon &amp; Athlos</a><a className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="pronite" href="#pronite">Sirens' Call</a><a className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="accommodation" href="#accommodation">Elysium</a><a className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="core-team" href="#team">Council of Elders</a></nav><div className="flex items-center gap-space-md"><a className="hidden sm:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="login" href="#">Login</a><a className="relative group inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b89025] text-on-primary font-serif-epic text-xs uppercase tracking-[0.2em] font-bold shadow-[0_0_24px_rgba(212,175,55,0.45)] hover:shadow-[0_0_36px_rgba(212,175,55,0.75)] hover:brightness-110 transition-all duration-300 border border-primary-fixed" data-path="register" href="/login"><span>Claim Thy Pass</span></a><div className="flex items-center pl-space-xs border-l border-outline-variant/60"><div className="w-8 h-8 rounded-full p-[1.5px] bg-gradient-to-tr from-primary to-secondary"><img alt="Acolyte Profile" className="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTSQ6OAGoGEnsddmhEV4GkTxmxZXNitGAGJihPYiq8C3ctkbI1qsmwbOCXO5VUZcycGUeLXC-B2pCFnK0W-1BAT7bt5c5AbN9ygKrvcrrfK0Js8dJKb903vXhZZKoZoiwUVe6WoqY0pUe1oRg3W2RiOzxqgE5N84Wc8Hh0qIfQ9Ch31govnKDX8_2ArxgMpwf9rfLGydubBDXKqPdpiX6mEW3FPnF7WqRNy-ZPph_lPFgynUiHre9u"/></div></div></div></div></header><main className="w-full pt-20 flex-1 bg-background relative z-10"><div className="flex flex-col w-full text-on-surface select-none overflow-x-hidden">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0c10]/85 backdrop-blur-xl border-b border-primary/25 shadow-[0_4px_30px_rgba(0,0,0,0.85)]"><div className="h-20 w-full px-gutter-mobile lg:px-margin flex items-center justify-between gap-space-md"><div className="flex items-center gap-space-sm"><Link className="flex items-center gap-3 group" href="#"><img loading="lazy" decoding="async" alt="Odyssey Greek Mythology Emblem Logo" className="h-11 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1Ue3PAJ7JV2m9P92IpdZxHnO4hmQzHDNyTW8XHWx2glR93l6i2QIKMMqq0JQR0cdDXg8urOVp35-W1ecJFpBFuWUN3Yhb6LcjgzbtgaUYwzKbY1pQOpjPe6wpYBdKXdWZusOCy-T2Cd1KDTII__OWj2JrhYBbuEfDh_OJOquxiU75hOUcxPeUUIGS4oHG5bsnFStBC0litjPjGgjX9zlbxB3zdgo7jRwS4VBiUVOCf3wOwqoSFIKcSiGBg"/></Link></div><nav className="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary border-b-2 border-primary-container font-semibold pb-1"><Link aria-current="page" className="transition-colors duration-200 text-primary border-b-2 border-primary-container font-semibold pb-1 tracking-wider text-label-md uppercase font-label-md" data-path="home" href="#">Sanctuary</Link><Link className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="events" href="#destinations">Agon &amp; Athlos</Link><Link className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="pronite" href="#pronite">Sirens&apos; Call</Link><Link className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="accommodation" href="#accommodation">Elysium</Link><Link className="font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="core-team" href="#team">Council of Elders</Link></nav><div className="flex items-center gap-space-md"><Link className="hidden sm:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-primary tracking-wider uppercase transition-colors duration-200" data-path="login" href="#">Login</Link><Link className="relative group inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b89025] text-on-primary font-serif-epic text-xs uppercase tracking-[0.2em] font-bold shadow-[0_0_24px_rgba(212,175,55,0.45)] hover:shadow-[0_0_36px_rgba(212,175,55,0.75)] hover:brightness-110 transition-all duration-300 border border-primary-fixed" data-path="register" href="/login"><span>Claim Thy Pass</span></Link><div className="flex items-center pl-space-xs border-l border-outline-variant/60"><div className="w-8 h-8 rounded-full p-[1.5px] bg-gradient-to-tr from-primary to-secondary"><img loading="lazy" decoding="async" alt="Acolyte Profile" className="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTSQ6OAGoGEnsddmhEV4GkTxmxZXNitGAGJihPYiq8C3ctkbI1qsmwbOCXO5VUZcycGUeLXC-B2pCFnK0W-1BAT7bt5c5AbN9ygKrvcrrfK0Js8dJKb903vXhZZKoZoiwUVe6WoqY0pUe1oRg3W2RiOzxqgE5N84Wc8Hh0qIfQ9Ch31govnKDX8_2ArxgMpwf9rfLGydubBDXKqPdpiX6mEW3FPnF7WqRNy-ZPph_lPFgynUiHre9u"/></div></div></div></div></header><main className="w-full pt-20 flex-1 bg-background relative z-10"><div className="flex flex-col w-full text-on-surface select-none overflow-x-hidden">
 {/* HERO EXPEDITION HORIZON (HOMERIC MYTHOS EPIC) */}
 <section className="relative min-h-[960px] w-full flex flex-col justify-between px-gutter-mobile lg:px-margin pt-10 pb-16 overflow-hidden">
 {/* Epic Amphitheater Hero Backdrop with Midnight Vignettes */}
 <div className="absolute inset-0 z-0">
-<img alt="Epic dark cinematic Greek mythology festival concert and grand amphitheater under a starry Aegean night sky with monumental god statues" className="w-full h-full object-cover object-center scale-105 filter brightness-[0.78] contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDni2i1XMuSC7iHO0AVh92QSV2reucO-EkdfWH03pp7K-n_ETGvZ74yvJmVW8DYqN8mCyjb6U6ZfhGbdh8MAvuNlrcPB31UcURy-d-nGAYE1y28uO6Gq7FWOJpYfSQbTXUn0BvzS0kHusXWhd5waod3Qj33-QH5pIVPY2ooz3DsYKLajIRF4_3URQszerJLYemCfnnoCo5Or7q3N5I_48-vZkXR9aURzNbyFXrStP4_WdAmIssdHKbX"/>
+<img loading="lazy" decoding="async" alt="Epic dark cinematic Greek mythology festival concert and grand amphitheater under a starry Aegean night sky with monumental god statues" className="w-full h-full object-cover object-center scale-105 filter brightness-[0.78] contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDni2i1XMuSC7iHO0AVh92QSV2reucO-EkdfWH03pp7K-n_ETGvZ74yvJmVW8DYqN8mCyjb6U6ZfhGbdh8MAvuNlrcPB31UcURy-d-nGAYE1y28uO6Gq7FWOJpYfSQbTXUn0BvzS0kHusXWhd5waod3Qj33-QH5pIVPY2ooz3DsYKLajIRF4_3URQszerJLYemCfnnoCo5Or7q3N5I_48-vZkXR9aURzNbyFXrStP4_WdAmIssdHKbX"/>
 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10] via-[#0a0c10]/60 to-[#0a0c10]/85"></div>
 <div className="absolute inset-0 bg-gradient-to-r from-[#0a0c10]/90 via-transparent to-[#0a0c10]/90"></div>
 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,#0a0c10_80%)]"></div>
@@ -59,14 +59,14 @@ export default function Home() {
       </p>
 {/* Action Cluster */}
 <div className="mt-9 flex flex-wrap items-center justify-center gap-space-md">
-<a className="px-8 py-4 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] font-serif-epic text-xs uppercase tracking-[0.2em] font-extrabold flex items-center gap-2 shadow-[0_0_35px_rgba(212,175,55,0.5)] hover:shadow-[0_0_50px_rgba(212,175,55,0.8)] hover:scale-105 transition-all duration-300 border border-[#ffe088]" href="#manifesto">
+<Link className="px-8 py-4 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] font-serif-epic text-xs uppercase tracking-[0.2em] font-extrabold flex items-center gap-2 shadow-[0_0_35px_rgba(212,175,55,0.5)] hover:shadow-[0_0_50px_rgba(212,175,55,0.8)] hover:scale-105 transition-all duration-300 border border-[#ffe088]" href="#manifesto">
 <span>Embark on the Odyssey</span>
 <span className="material-symbols-outlined text-[18px]">explore</span>
-</a>
-<a className="px-8 py-4 rounded-full bg-surface-container-high/85 text-on-surface hover:text-primary font-serif-epic text-xs uppercase tracking-[0.2em] font-semibold backdrop-blur-xl border border-primary/30 shadow-lg hover:shadow-[0_0_26px_rgba(212,175,55,0.3)] transition-all duration-300 flex items-center gap-2" href="#destinations">
+</Link>
+<Link className="px-8 py-4 rounded-full bg-surface-container-high/85 text-on-surface hover:text-primary font-serif-epic text-xs uppercase tracking-[0.2em] font-semibold backdrop-blur-xl border border-primary/30 shadow-lg hover:shadow-[0_0_26px_rgba(212,175,55,0.3)] transition-all duration-300 flex items-center gap-2" href="#destinations">
 <span>Consult The Oracle / Rulebook</span>
 <span className="material-symbols-outlined text-[18px]">auto_stories</span>
-</a>
+</Link>
 </div>
 </div>
 {/* Bottom Indicator Strip */}
@@ -75,10 +75,10 @@ export default function Home() {
 <span className="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#f2ca50]"></span>
 <span className="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">SACRED COORDINATES: 22.9751┬░ N, 88.4345┬░ E // AIIMS KALYANI</span>
 </div>
-<a className="group inline-flex items-center gap-2 font-serif-epic text-xs text-primary hover:text-primary-fixed tracking-[0.2em] transition-colors" href="#manifesto">
+<Link className="group inline-flex items-center gap-2 font-serif-epic text-xs text-primary hover:text-primary-fixed tracking-[0.2em] transition-colors" href="#manifesto">
 <span>DESCEND INTO THE LABYRINTH</span>
 <span className="material-symbols-outlined text-[16px] text-primary group-hover:translate-y-1 transition-transform">south</span>
-</a>
+</Link>
 <div className="hidden md:flex items-center gap-3 font-serif-epic text-xs text-on-surface-variant">
 <span className="tracking-widest">ITHACA AWAITS</span>
 <span className="text-primary">✦</span>
@@ -206,7 +206,7 @@ export default function Home() {
 <div className="flex flex-wrap items-center gap-1.5 p-1.5 rounded-full bg-surface-container/80 border border-primary/25 backdrop-blur-md">
 <button className="px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-serif-epic text-[11px] tracking-wider uppercase font-bold transition-all shadow-[0_0_12px_rgba(212,175,55,0.4)]">All Trials</button>
 <button className="px-4 py-1.5 rounded-full text-on-surface-variant hover:text-primary font-serif-epic text-[11px] tracking-wider uppercase transition-all">Cult of Apollo (Music)</button>
-<button className="px-4 py-1.5 rounded-full text-on-surface-variant hover:text-primary font-serif-epic text-[11px] tracking-wider uppercase transition-all">Athena's Mind (MedTech)</button>
+<button className="px-4 py-1.5 rounded-full text-on-surface-variant hover:text-primary font-serif-epic text-[11px] tracking-wider uppercase transition-all">Athena&apos;s Mind (MedTech)</button>
 <button className="px-4 py-1.5 rounded-full text-on-surface-variant hover:text-primary font-serif-epic text-[11px] tracking-wider uppercase transition-all">Homeric Literary</button>
 <button className="px-4 py-1.5 rounded-full text-on-surface-variant hover:text-primary font-serif-epic text-[11px] tracking-wider uppercase transition-all">Olympic Games</button>
 </div>
@@ -216,7 +216,7 @@ export default function Home() {
 {/* Trial 1: Aetheria: Battle of the Bards */}
 <div className="group relative rounded-2xl bg-surface-container/90 border border-outline-variant/40 hover:border-primary/60 backdrop-blur-xl overflow-hidden flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_36px_rgba(212,175,55,0.25)]">
 <div className="relative h-48 w-full overflow-hidden">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dark energetic live rock band on stage with intense cyan and violet silhouette stage lights, atmospheric smoke haze, electric guitar in foreground, cinematic crowd in shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZf0CyalxVRYCMuwOR9TWG3h0bUTdIxz1Rn3wj-2HHJ7X9zwlhW1UIrJYj8KjbnG26GxK2WRGOtCD6JiEYoGZcd7t-DjlNzLuFu1Zxwii5sqmtqBhoOjUhDPgeZ5Sshlhg3W1ozPAjpkmGJ1o4QOFTfqxK31-ewNYJyu0QUul5scZ2OosXVY8nJpeE3KVkNu5j3lFGDbiVr1NVRk2-bhHOqCiotDC48YuuQgQavFkOQiwC-uZQym0A"/>
+<img loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dark energetic live rock band on stage with intense cyan and violet silhouette stage lights, atmospheric smoke haze, electric guitar in foreground, cinematic crowd in shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZf0CyalxVRYCMuwOR9TWG3h0bUTdIxz1Rn3wj-2HHJ7X9zwlhW1UIrJYj8KjbnG26GxK2WRGOtCD6JiEYoGZcd7t-DjlNzLuFu1Zxwii5sqmtqBhoOjUhDPgeZ5Sshlhg3W1ozPAjpkmGJ1o4QOFTfqxK31-ewNYJyu0QUul5scZ2OosXVY8nJpeE3KVkNu5j3lFGDbiVr1NVRk2-bhHOqCiotDC48YuuQgQavFkOQiwC-uZQym0A"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary-container/90 backdrop-blur-md text-white font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
             APOLLO • BAND BATTLE
@@ -239,17 +239,17 @@ export default function Home() {
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">schedule</span> Day 2 • 5:00 PM</span>
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">temple_hindu</span> Grand Colosseum</span>
 </div>
-<a className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
+<Link className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
 <span>View Agon Decree</span>
 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
+</Link>
 </div>
 </div>
 </div>
 {/* Trial 2: Asclepius 2.0 */}
 <div className="group relative rounded-2xl bg-surface-container/90 border border-outline-variant/40 hover:border-primary/60 backdrop-blur-xl overflow-hidden flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_36px_rgba(212,175,55,0.25)]">
 <div className="relative h-48 w-full overflow-hidden">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic biomedical hackathon with glowing cyan neural network holographic visualization, laptops, dark room with ambient neon blue lighting, students collaborating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRuLclTeAgG7kto_3h3-tHrBhPuGp0XNYMOx5ZdXWkNdRjO2zTZOy_Hp0Dsi_mDvAEjWKgQObD9op5zLaRIMd0zXu8h7poecJ8myGHLAVdh8Dka0zUkgenz-oCgRuixKiaq7_ZuZIdQDgY407KAr5aapEP66zy2JVkwFqhktD2XiBfX3g4C4x98FmN5_KO6wUPcKR-tsNBeXcgoar96ly4JH5qa3N1DX2HsEC68mxFKAyG5MCchkWk"/>
+<img loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic biomedical hackathon with glowing cyan neural network holographic visualization, laptops, dark room with ambient neon blue lighting, students collaborating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRuLclTeAgG7kto_3h3-tHrBhPuGp0XNYMOx5ZdXWkNdRjO2zTZOy_Hp0Dsi_mDvAEjWKgQObD9op5zLaRIMd0zXu8h7poecJ8myGHLAVdh8Dka0zUkgenz-oCgRuixKiaq7_ZuZIdQDgY407KAr5aapEP66zy2JVkwFqhktD2XiBfX3g4C4x98FmN5_KO6wUPcKR-tsNBeXcgoar96ly4JH5qa3N1DX2HsEC68mxFKAyG5MCchkWk"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/40 backdrop-blur-md text-primary font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
             ATHENA • CLINICAL HACK
@@ -272,17 +272,17 @@ export default function Home() {
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">timer</span> 36-Hour Gauntlet</span>
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">biotech</span> Athena Lab III</span>
 </div>
-<a className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
+<Link className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
 <span>View Agon Decree</span>
 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
+</Link>
 </div>
 </div>
 </div>
 {/* Trial 3: Terpsichore: National Dance Spectacle */}
 <div className="group relative rounded-2xl bg-surface-container/90 border border-outline-variant/40 hover:border-secondary/60 backdrop-blur-xl overflow-hidden flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_36px_rgba(123,208,255,0.25)]">
 <div className="relative h-48 w-full overflow-hidden">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic contemporary dance troupe performing on dark stage with dramatic overhead spotlight beams, flowing cosmic costumes, theatrical lighting in violet and deep cyan hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-xiA3iQefNIPx-qIo1Ei1RoRXaf8AzUyT--CIf14o2O56Ax-q9eQjDBIy8j7ff_gYt5ob7Bpqk27b7RWFwHqeeBow63_sH2xESEQ9yTyubp0Gu2KiUZrtt77J2e3CQX34u9y4HEhdbm6em7_Y_jsddRkdE0LufucxRzeb3G7r8uYQnlh25JQK4Vcag8W0n9MF3UvlUZLE7FcHXkj25suVMcoIh1lzZXbaclBpiNIJyY9Wj9xTGYLs"/>
+<img loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic contemporary dance troupe performing on dark stage with dramatic overhead spotlight beams, flowing cosmic costumes, theatrical lighting in violet and deep cyan hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-xiA3iQefNIPx-qIo1Ei1RoRXaf8AzUyT--CIf14o2O56Ax-q9eQjDBIy8j7ff_gYt5ob7Bpqk27b7RWFwHqeeBow63_sH2xESEQ9yTyubp0Gu2KiUZrtt77J2e3CQX34u9y4HEhdbm6em7_Y_jsddRkdE0LufucxRzeb3G7r8uYQnlh25JQK4Vcag8W0n9MF3UvlUZLE7FcHXkj25suVMcoIh1lzZXbaclBpiNIJyY9Wj9xTGYLs"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary-container/90 backdrop-blur-md text-white font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
             MUSES • CHOREO
@@ -305,17 +305,17 @@ export default function Home() {
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-secondary">schedule</span> Day 3 • 6:30 PM</span>
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-secondary">theater_comedy</span> Main Amphitheater</span>
 </div>
-<a className="mt-2 inline-flex items-center justify-between text-secondary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
+<Link className="mt-2 inline-flex items-center justify-between text-secondary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
 <span>View Agon Decree</span>
 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
+</Link>
 </div>
 </div>
 </div>
-{/* Trial 4: The Oracle's Riddle */}
+{/* Trial 4: The Oracle&apos;s Riddle */}
 <div className="group relative rounded-2xl bg-surface-container/90 border border-outline-variant/40 hover:border-primary/60 backdrop-blur-xl overflow-hidden flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_36px_rgba(212,175,55,0.25)]">
 <div className="relative h-48 w-full overflow-hidden">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dramatic auditorium quiz competition setting, spotlight on contestant buzzer podiums, digital scoreboard glowing in electric blue, dark atmospheric background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAptJsP5BpfQfzpeaaCARQPtg9JC1lJUMbjTJQM5Y8jGRePCrUs6HJjWmkzCisfrxhbTVyrhM2n04_HBWs-jJci4QH-gz5Q0MkGNTzmr8fP60jMdHQupzRDM7D4jY1pvEliIKMXMYvTdara1AozOD0E11TAZuifI6fJHRyuB_3y0hazYd52a__IrI0y36ViUWvs6N37UdoE_hiXyTRtHbD5GYmHH264mYw6z5TvmELmvvHBjB9ps7xG"/>
+<img loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dramatic auditorium quiz competition setting, spotlight on contestant buzzer podiums, digital scoreboard glowing in electric blue, dark atmospheric background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAptJsP5BpfQfzpeaaCARQPtg9JC1lJUMbjTJQM5Y8jGRePCrUs6HJjWmkzCisfrxhbTVyrhM2n04_HBWs-jJci4QH-gz5Q0MkGNTzmr8fP60jMdHQupzRDM7D4jY1pvEliIKMXMYvTdara1AozOD0E11TAZuifI6fJHRyuB_3y0hazYd52a__IrI0y36ViUWvs6N37UdoE_hiXyTRtHbD5GYmHH264mYw6z5TvmELmvvHBjB9ps7xG"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/40 backdrop-blur-md text-primary font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
             DELPHI • NATIONAL QUIZ
@@ -327,7 +327,7 @@ export default function Home() {
 <div className="p-space-md flex flex-col flex-1 justify-between gap-4">
 <div>
 <h3 className="font-serif-epic text-[19px] text-on-surface group-hover:text-primary transition-colors leading-snug">
-              The Oracle's Riddle: Med-Pop Trivia
+              The Oracle&apos;s Riddle: Med-Pop Trivia
             </h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
               6 grueling rounds probing classical mythology, ancient pandemic history, neuroscience milestones, and modern culture.
@@ -338,20 +338,20 @@ export default function Home() {
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">schedule</span> Day 2 • 11:00 AM</span>
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">school</span> Hippocrates LT</span>
 </div>
-<a className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
+<Link className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
 <span>View Agon Decree</span>
 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
+</Link>
 </div>
 </div>
 </div>
 </div>
 {/* Centered Call to View All Events */}
 <div className="mt-space-lg flex justify-center">
-<a className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-surface-container-high border border-primary/30 text-on-surface hover:text-primary hover:border-primary transition-all duration-300 font-serif-epic text-xs uppercase tracking-[0.2em] shadow-lg" href="#">
+<Link className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-surface-container-high border border-primary/30 text-on-surface hover:text-primary hover:border-primary transition-all duration-300 font-serif-epic text-xs uppercase tracking-[0.2em] shadow-lg" href="#">
 <span>Inspect All 45+ Sacred Athlos</span>
 <span className="material-symbols-outlined text-[18px] text-primary">east</span>
-</a>
+</Link>
 </div>
 </section>
 {/* THE NIGHT AWAITS — SIRENS' CALL (PRONITE SHOWCASE) */}
@@ -369,7 +369,7 @@ export default function Home() {
             WHEN NIGHT FALLS UPON MOUNT OLYMPUS
           </h2>
 <p className="font-serif-epic text-secondary text-sm tracking-widest uppercase mt-1">
-            THE SIRENS' CALL — 4 UNBOUND NIGHTS OF MUSIC &amp; EUPHORIA
+            THE SIRENS&apos; CALL — 4 UNBOUND NIGHTS OF MUSIC &amp; EUPHORIA
           </p>
 <p className="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
             When dusk settles over the Kalyani Acropolis, the medical sanctuary ignites into an Olympian arena. 10,000 mortal voices chanting under starlit skies.
@@ -397,7 +397,7 @@ export default function Home() {
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg pt-space-lg items-center">
 {/* Dramatic Amphitheater Stage Visual */}
 <div className="lg:col-span-7 relative rounded-2xl overflow-hidden border border-primary/40 shadow-2xl h-80 lg:h-96 group">
-<img alt="Massive outdoor concert stadium stage at night with thousands of cheering hands in silhouette, cyan and gold laser rays slicing through haze, pyrotechnics" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ185st9xBziVtx2cAyeJefzBX851drH7aIjc8e5ZTgl2UjMfJ5OKxtJoAywlJi991SscjJD2gd4WHiHxF-ZJrHP-sc1XW7WT1-CkTwrPlYTwkf64q1c5nCtzhV3GxxYP72UMarIlSboA8HM-PAq9oVCYcC28MXTSuU3h7klvAYpB1zButiCcFvJWIXFBqZeG9Ajib0nQoYo5769vi4qaAp_YUVZHs1J4tX1O5d7j5Xnw0Lfs4hE7b"/>
+<img loading="lazy" decoding="async" alt="Massive outdoor concert stadium stage at night with thousands of cheering hands in silhouette, cyan and gold laser rays slicing through haze, pyrotechnics" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ185st9xBziVtx2cAyeJefzBX851drH7aIjc8e5ZTgl2UjMfJ5OKxtJoAywlJi991SscjJD2gd4WHiHxF-ZJrHP-sc1XW7WT1-CkTwrPlYTwkf64q1c5nCtzhV3GxxYP72UMarIlSboA8HM-PAq9oVCYcC28MXTSuU3h7klvAYpB1zButiCcFvJWIXFBqZeG9Ajib0nQoYo5769vi4qaAp_YUVZHs1J4tX1O5d7j5Xnw0Lfs4hE7b"/>
 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10] via-[#0a0c10]/40 to-transparent"></div>
 <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
 <div>
@@ -447,10 +447,10 @@ export default function Home() {
 <span className="material-symbols-outlined text-[15px]">bolt</span> Only 350 Reserved Slots Remaining
             </div>
 </div>
-<a className="w-full py-4 rounded-xl bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] font-serif-epic text-xs uppercase tracking-[0.2em] font-black text-center shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:shadow-[0_0_45px_rgba(212,175,55,0.8)] transition-all flex items-center justify-center gap-2 border border-[#ffe088]" href="/login">
+<Link className="w-full py-4 rounded-xl bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] font-serif-epic text-xs uppercase tracking-[0.2em] font-black text-center shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:shadow-[0_0_45px_rgba(212,175,55,0.8)] transition-all flex items-center justify-center gap-2 border border-[#ffe088]" href="/login">
 <span>CLAIM THY OLYMPIAN PASS</span>
 <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-</a>
+</Link>
 </div>
 </div>
 </div>
@@ -503,9 +503,9 @@ export default function Home() {
             </li>
 </ul>
 </div>
-<a className="mt-8 w-full py-3 rounded-full bg-surface-container-high border border-primary/30 text-on-surface hover:text-primary hover:border-primary transition-all font-serif-epic text-xs uppercase tracking-wider text-center font-bold" href="/login">
+<Link className="mt-8 w-full py-3 rounded-full bg-surface-container-high border border-primary/30 text-on-surface hover:text-primary hover:border-primary transition-all font-serif-epic text-xs uppercase tracking-wider text-center font-bold" href="/login">
           Reserve Spartan Berth
-        </a>
+        </Link>
 </div>
 {/* Elysian Chambers */}
 <div className="lg:col-span-4 rounded-2xl bg-surface-container-high/90 border border-primary/50 backdrop-blur-xl p-space-lg flex flex-col justify-between shadow-2xl relative overflow-hidden gold-border-glow">
@@ -540,9 +540,9 @@ export default function Home() {
             </li>
 </ul>
 </div>
-<a className="mt-8 w-full py-3 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] hover:brightness-110 transition-all font-serif-epic text-xs uppercase tracking-wider text-center shadow-lg relative z-10 font-bold" href="/login">
+<Link className="mt-8 w-full py-3 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] hover:brightness-110 transition-all font-serif-epic text-xs uppercase tracking-wider text-center shadow-lg relative z-10 font-bold" href="/login">
           Reserve Elysian Suite
-        </a>
+        </Link>
 </div>
 {/* Decrees of the Sanctuary */}
 <div className="lg:col-span-4 rounded-2xl bg-surface-container-low/95 border border-outline-variant/40 backdrop-blur-xl p-space-lg flex flex-col justify-between shadow-xl">
@@ -600,7 +600,7 @@ export default function Home() {
 {/* Elder 1 */}
 <div className="p-space-md rounded-2xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/50 backdrop-blur-md flex flex-col gap-4 shadow-lg group hover:-translate-y-1 transition-all">
 <div className="relative w-full h-60 rounded-xl overflow-hidden bg-surface-container-high">
-<img alt="Portrait of distinguished senior Indian medical doctor and academic mentor" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKiFTK5-hqXE_tYIKyVmUOGbNYQrcmSdaOnXWNynq4JNC8AF0N4CdcEZFmLFXsonfxjKrrW68fJ11t01VjCbB6l9HFwnTShmkWfJIHxVjI1ZY1sv9sd4b3AZVRqxZLVJuWKAQQtzUbVUY_tE3yyzuUiAcsXvhFI-QeZVMr-kpWbzT6IbIbZQmH_kv8HqOWMQaf28sfXvnBWhDTgMuUsygcVvEW9Rbr1FErlPYObn0nXSvCiIwVbNn9"/>
+<img loading="lazy" decoding="async" alt="Portrait of distinguished senior Indian medical doctor and academic mentor" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKiFTK5-hqXE_tYIKyVmUOGbNYQrcmSdaOnXWNynq4JNC8AF0N4CdcEZFmLFXsonfxjKrrW68fJ11t01VjCbB6l9HFwnTShmkWfJIHxVjI1ZY1sv9sd4b3AZVRqxZLVJuWKAQQtzUbVUY_tE3yyzuUiAcsXvhFI-QeZVMr-kpWbzT6IbIbZQmH_kv8HqOWMQaf28sfXvnBWhDTgMuUsygcVvEW9Rbr1FErlPYObn0nXSvCiIwVbNn9"/>
 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10] via-transparent to-transparent"></div>
 <span className="absolute bottom-2.5 left-2.5 px-2.5 py-0.5 rounded bg-surface-container-highest/90 border border-primary/30 text-primary font-serif-epic text-[10px] uppercase font-bold tracking-wider">
             HIGH PATRON &amp; DEAN
@@ -615,7 +615,7 @@ export default function Home() {
 {/* Elder 2 */}
 <div className="p-space-md rounded-2xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/50 backdrop-blur-md flex flex-col gap-4 shadow-lg group hover:-translate-y-1 transition-all">
 <div className="relative w-full h-60 rounded-xl overflow-hidden bg-surface-container-high">
-<img alt="Portrait of young confident Indian male medical student leader" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA97U_2H2pMh6XTUo6yn8THO3g-G3Y6cG15jXTc5CeNKtPSHy0JLp2gl1c-L1DYml66Sdq6ejHlUatryIe16YsQt8Oqn_ZdXE1MP5xVUyZIBHdZWKszWW8lIpSZYu8cSWBKaEFY5GDKJCQYdOAEJbLWRtMQWVd4Bd6SejEKPqUk1PvJlChjrOJ7PWh_2yV71ehTuvMYdg0-frLDLI6zoOcb_xpnaPLUsVvaxKw8A5chCXniDwzmAo-5"/>
+<img loading="lazy" decoding="async" alt="Portrait of young confident Indian male medical student leader" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA97U_2H2pMh6XTUo6yn8THO3g-G3Y6cG15jXTc5CeNKtPSHy0JLp2gl1c-L1DYml66Sdq6ejHlUatryIe16YsQt8Oqn_ZdXE1MP5xVUyZIBHdZWKszWW8lIpSZYu8cSWBKaEFY5GDKJCQYdOAEJbLWRtMQWVd4Bd6SejEKPqUk1PvJlChjrOJ7PWh_2yV71ehTuvMYdg0-frLDLI6zoOcb_xpnaPLUsVvaxKw8A5chCXniDwzmAo-5"/>
 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10] via-transparent to-transparent"></div>
 <span className="absolute bottom-2.5 left-2.5 px-2.5 py-0.5 rounded bg-surface-container-highest/90 border border-primary/30 text-primary font-serif-epic text-[10px] uppercase font-bold tracking-wider">
             GRAND CONVENOR
@@ -630,7 +630,7 @@ export default function Home() {
 {/* Elder 3 */}
 <div className="p-space-md rounded-2xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/50 backdrop-blur-md flex flex-col gap-4 shadow-lg group hover:-translate-y-1 transition-all">
 <div className="relative w-full h-60 rounded-xl overflow-hidden bg-surface-container-high">
-<img alt="Portrait of expressive young Indian female student coordinator" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4bpSe4u55R2TTLa0IdK-PtuvWU1Ge19YR1zQbBqMkQiGSpXThnaFwVrTOwDF1PW_A9bZDsHsne6Aj-VzKAF8shEx_ox3LMyAZSszLZy3l-uP4MQ8fkBE4TFWqnB9oD8j8JfZ9YM87R6FAnUQCBpnSV8HXsJoeGZokyLAndYaar4x63fvcDnEE67EIiE324pM8f0bWUhZz-pXMwLOhzriomJJwSxJnos0uvQ2IVFDNcJqYzrrUMKjo"/>
+<img loading="lazy" decoding="async" alt="Portrait of expressive young Indian female student coordinator" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4bpSe4u55R2TTLa0IdK-PtuvWU1Ge19YR1zQbBqMkQiGSpXThnaFwVrTOwDF1PW_A9bZDsHsne6Aj-VzKAF8shEx_ox3LMyAZSszLZy3l-uP4MQ8fkBE4TFWqnB9oD8j8JfZ9YM87R6FAnUQCBpnSV8HXsJoeGZokyLAndYaar4x63fvcDnEE67EIiE324pM8f0bWUhZz-pXMwLOhzriomJJwSxJnos0uvQ2IVFDNcJqYzrrUMKjo"/>
 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10] via-transparent to-transparent"></div>
 <span className="absolute bottom-2.5 left-2.5 px-2.5 py-0.5 rounded bg-surface-container-highest/90 border border-primary/30 text-primary font-serif-epic text-[10px] uppercase font-bold tracking-wider">
             PYTHIA OF CULTURES
@@ -645,7 +645,7 @@ export default function Home() {
 {/* Elder 4 */}
 <div className="p-space-md rounded-2xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/50 backdrop-blur-md flex flex-col gap-4 shadow-lg group hover:-translate-y-1 transition-all">
 <div className="relative w-full h-60 rounded-xl overflow-hidden bg-surface-container-high">
-<img alt="Portrait of thoughtful young Indian male biomedical technologist with glasses" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYFF5gi2B6MpWXBTLkiY1gkpIVKh-f6hOsq38vqpHK4hZiSmyTGJcd-hf8bsmiw8ygXbTSp77qW6tKoFe_VTeDBsHjgm5ZHg2YxUe5jHRZSE0JYq7wjJ8woSySlXTku9tQbh6lhgGXxxnsB-ODwNdtRLHDGD-gHDTpSs9o-BjUVtOixrL7YrXDMZ_v9DH1bd4jbI0GfeWdJ7jSDrQQ09p2hLQsxV9MtaHEDm1a_urs3FXWgqgfBN8t"/>
+<img loading="lazy" decoding="async" alt="Portrait of thoughtful young Indian male biomedical technologist with glasses" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYFF5gi2B6MpWXBTLkiY1gkpIVKh-f6hOsq38vqpHK4hZiSmyTGJcd-hf8bsmiw8ygXbTSp77qW6tKoFe_VTeDBsHjgm5ZHg2YxUe5jHRZSE0JYq7wjJ8woSySlXTku9tQbh6lhgGXxxnsB-ODwNdtRLHDGD-gHDTpSs9o-BjUVtOixrL7YrXDMZ_v9DH1bd4jbI0GfeWdJ7jSDrQQ09p2hLQsxV9MtaHEDm1a_urs3FXWgqgfBN8t"/>
 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10] via-transparent to-transparent"></div>
 <span className="absolute bottom-2.5 left-2.5 px-2.5 py-0.5 rounded bg-surface-container-highest/90 border border-primary/30 text-primary font-serif-epic text-[10px] uppercase font-bold tracking-wider">
             HEPHAESTUS TECH LEAD
@@ -677,12 +677,12 @@ export default function Home() {
         </p>
 {/* Final Conversion CTAs */}
 <div className="mt-8 flex flex-wrap items-center justify-center gap-space-md">
-<a className="px-10 py-4 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] font-serif-epic text-xs uppercase tracking-[0.2em] font-black shadow-[0_0_35px_rgba(212,175,55,0.5)] hover:shadow-[0_0_50px_rgba(212,175,55,0.85)] hover:scale-105 transition-all border border-[#ffe088]" href="#">
+<Link className="px-10 py-4 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f2ca50] to-[#b38615] text-[#1c1400] font-serif-epic text-xs uppercase tracking-[0.2em] font-black shadow-[0_0_35px_rgba(212,175,55,0.5)] hover:shadow-[0_0_50px_rgba(212,175,55,0.85)] hover:scale-105 transition-all border border-[#ffe088]" href="#">
             ENTER THE MYTHOS
-          </a>
-<a className="px-10 py-4 rounded-full bg-surface-container-highest/80 border border-primary/30 text-on-surface hover:text-primary font-serif-epic text-xs uppercase tracking-[0.2em] font-semibold backdrop-blur-xl shadow-lg transition-all" href="#">
+          </Link>
+<Link className="px-10 py-4 rounded-full bg-surface-container-highest/80 border border-primary/30 text-on-surface hover:text-primary font-serif-epic text-xs uppercase tracking-[0.2em] font-semibold backdrop-blur-xl shadow-lg transition-all" href="#">
             PORTAL LOGIN
-          </a>
+          </Link>
 </div>
 <div className="mt-8 flex items-center gap-6 font-serif-epic text-xs text-on-surface-variant">
 <span className="flex items-center gap-1.5">
@@ -700,7 +700,7 @@ export default function Home() {
 
 </main>
 {/* FOOTER WITH MYTHIC TOUCHES */}
-<footer className="w-full bg-[#0a0c10] border-t border-primary/20 relative z-20"><div className="w-full px-gutter-mobile lg:px-margin py-space-xl flex flex-col gap-space-xl"><div className="grid grid-cols-1 md:grid-cols-4 gap-space-lg"><div className="flex flex-col gap-space-sm md:col-span-1"><div className="flex items-center gap-space-xs"><img alt="Odyssey Greek Mythology Logo" className="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ue3PAJ7JV2m9P92IpdZxHnO4hmQzHDNyTW8XHWx2glR93l6i2QIKMMqq0JQR0cdDXg8urOVp35-W1ecJFpBFuWUN3Yhb6LcjgzbtgaUYwzKbY1pQOpjPe6wpYBdKXdWZusOCy-T2Cd1KDTII__OWj2JrhYBbuEfDh_OJOquxiU75hOUcxPeUUIGS4oHG5bsnFStBC0litjPjGgjX9zlbxB3zdgo7jRwS4VBiUVOCf3wOwqoSFIKcSiGBg"/></div><p className="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-2">The premier biomedical, cultural, and intellectual festival of All India Institute of Medical Sciences, Kalyani. A mythic convergence of clinical intellect, heroic arts, and starlit celebration.</p><div className="flex items-center gap-space-xs text-on-surface-variant mt-1"><span className="material-symbols-outlined text-[18px] text-primary">location_on</span><span className="font-label-md text-label-md">NH-34 Connector, Basantapur, Kalyani, WB 741245</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Sacred Paths</span><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="events" href="#destinations">Agon &amp; Athlos Trials</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pronite" href="#pronite">Sirens' Call Pronite</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="accommodation" href="#accommodation">Elysian Chambers</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="core-team" href="#team">High Council of Elders</a></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Oracle Directives</span><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#">Acolyte Portal Access</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Emissary Inquiries</a><div className="mt-space-xs flex items-center gap-space-xs text-on-surface-variant"><span className="material-symbols-outlined text-[18px] text-primary">mail</span><span className="font-label-md text-label-md">odyssey@aiimskalyani.edu.in</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Olympian Signals</span><div className="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Instagram" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">public</span></a><a aria-label="LinkedIn" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">hub</span></a><a aria-label="YouTube" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">smart_display</span></a></div></div></div><div className="pt-space-md border-t border-primary/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p className="font-serif-epic text-xs text-on-surface-variant tracking-wider">┬® 2026 ODYSSEY • AIIMS Kalyani. In the honor of Apollo &amp; Athena.</p><div className="flex items-center gap-space-md font-serif-epic text-xs text-on-surface-variant tracking-wider"><a className="hover:text-primary transition-colors" href="#">Sacred Decrees</a><a className="hover:text-primary transition-colors" href="#">Code of Honor</a></div></div></div></footer>
+<footer className="w-full bg-[#0a0c10] border-t border-primary/20 relative z-20"><div className="w-full px-gutter-mobile lg:px-margin py-space-xl flex flex-col gap-space-xl"><div className="grid grid-cols-1 md:grid-cols-4 gap-space-lg"><div className="flex flex-col gap-space-sm md:col-span-1"><div className="flex items-center gap-space-xs"><img loading="lazy" decoding="async" alt="Odyssey Greek Mythology Logo" className="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ue3PAJ7JV2m9P92IpdZxHnO4hmQzHDNyTW8XHWx2glR93l6i2QIKMMqq0JQR0cdDXg8urOVp35-W1ecJFpBFuWUN3Yhb6LcjgzbtgaUYwzKbY1pQOpjPe6wpYBdKXdWZusOCy-T2Cd1KDTII__OWj2JrhYBbuEfDh_OJOquxiU75hOUcxPeUUIGS4oHG5bsnFStBC0litjPjGgjX9zlbxB3zdgo7jRwS4VBiUVOCf3wOwqoSFIKcSiGBg"/></div><p className="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-2">The premier biomedical, cultural, and intellectual festival of All India Institute of Medical Sciences, Kalyani. A mythic convergence of clinical intellect, heroic arts, and starlit celebration.</p><div className="flex items-center gap-space-xs text-on-surface-variant mt-1"><span className="material-symbols-outlined text-[18px] text-primary">location_on</span><span className="font-label-md text-label-md">NH-34 Connector, Basantapur, Kalyani, WB 741245</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Sacred Paths</span><Link className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="events" href="#destinations">Agon &amp; Athlos Trials</Link><Link className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pronite" href="#pronite">Sirens&apos; Call Pronite</Link><Link className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="accommodation" href="#accommodation">Elysian Chambers</Link><Link className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="core-team" href="#team">High Council of Elders</Link></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Oracle Directives</span><Link className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#">Acolyte Portal Access</Link><Link className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Emissary Inquiries</Link><div className="mt-space-xs flex items-center gap-space-xs text-on-surface-variant"><span className="material-symbols-outlined text-[18px] text-primary">mail</span><span className="font-label-md text-label-md">odyssey@aiimskalyani.edu.in</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Olympian Signals</span><div className="flex items-center gap-space-sm text-on-surface-variant"><Link aria-label="Instagram" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">photo_camera</span></Link><Link aria-label="Facebook" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">public</span></Link><Link aria-label="LinkedIn" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">hub</span></Link><Link aria-label="YouTube" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">smart_display</span></Link></div></div></div><div className="pt-space-md border-t border-primary/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p className="font-serif-epic text-xs text-on-surface-variant tracking-wider">┬® 2026 ODYSSEY • AIIMS Kalyani. In the honor of Apollo &amp; Athena.</p><div className="flex items-center gap-space-md font-serif-epic text-xs text-on-surface-variant tracking-wider"><Link className="hover:text-primary transition-colors" href="#">Sacred Decrees</Link><Link className="hover:text-primary transition-colors" href="#">Code of Honor</Link></div></div></div></footer>
     </>
   );
 }

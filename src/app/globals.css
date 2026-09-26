@@ -59,20 +59,20 @@
   --spacing-space-md: 1rem;
   --spacing-gutter: 1.5rem;
 
-  --font-cinzel: "Cinzel", serif;
-  --font-label-md: "Space Grotesk", sans-serif;
-  --font-body-md: "Space Grotesk", sans-serif;
-  --font-body-sm: "Space Grotesk", sans-serif;
-  --font-display-hero: "Syne", sans-serif;
-  --font-headline-md: "Syne", sans-serif;
-  --font-headline-lg: "Syne", sans-serif;
+  --font-cinzel: var(--font-cinzel-font), serif;
+  --font-label-md: var(--font-space-grotesk), sans-serif;
+  --font-body-md: var(--font-space-grotesk), sans-serif;
+  --font-body-sm: var(--font-space-grotesk), sans-serif;
+  --font-display-hero: var(--font-syne), sans-serif;
+  --font-headline-md: var(--font-syne), sans-serif;
+  --font-headline-lg: var(--font-syne), sans-serif;
 
-  --font-body-lg: "Space Grotesk", sans-serif;
-  --font-headline-sm: "Cinzel", "Syne", serif;
-  --font-label-caps: "Space Grotesk", sans-serif;
-  --font-label-sm: "Space Grotesk", sans-serif;
-  --font-code-mono: "Space Grotesk", monospace;
-  --font-serif-epic: "Cinzel", "Syne", serif;
+  --font-body-lg: var(--font-space-grotesk), sans-serif;
+  --font-headline-sm: var(--font-cinzel-font), var(--font-syne), serif;
+  --font-label-caps: var(--font-space-grotesk), sans-serif;
+  --font-label-sm: var(--font-space-grotesk), sans-serif;
+  --font-code-mono: var(--font-space-grotesk), monospace;
+  --font-serif-epic: var(--font-cinzel-font), var(--font-syne), serif;
   
   --text-label-md: 11px;
   --text-label-md--line-height: 16px;
