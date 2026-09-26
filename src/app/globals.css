@@ -66,6 +66,53 @@
   --font-display-hero: "Syne", sans-serif;
   --font-headline-md: "Syne", sans-serif;
   --font-headline-lg: "Syne", sans-serif;
+
+  --font-body-lg: "Space Grotesk", sans-serif;
+  --font-headline-sm: "Cinzel", "Syne", serif;
+  --font-label-caps: "Space Grotesk", sans-serif;
+  --font-label-sm: "Space Grotesk", sans-serif;
+  --font-code-mono: "Space Grotesk", monospace;
+  --font-serif-epic: "Cinzel", "Syne", serif;
+  
+  --text-label-md: 11px;
+  --text-label-md--line-height: 16px;
+  
+  --text-headline-md: 28px;
+  --text-headline-md--line-height: 36px;
+  
+  --text-headline-lg: 40px;
+  --text-headline-lg--line-height: 48px;
+  
+  --text-display-hero: 64px;
+  --text-display-hero--line-height: 72px;
+  
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  
+  --text-title-lg: 18px;
+  --text-title-lg--line-height: 24px;
+  
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  
+  --text-label-lg: 13px;
+  --text-label-lg--line-height: 18px;
+  
+  --text-body-md: 15px;
+  --text-body-md--line-height: 24px;
+  
+  --text-label-sm: 10px;
+  --text-label-sm--line-height: 14px;
+  
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 20px;
+  
+  --text-label-caps: 10px;
+  --text-label-caps--line-height: 14px;
+  
+  --text-code-mono: 12px;
+  --text-code-mono--line-height: 18px;
+
 }
 
 @layer base {
@@ -74,3 +121,7 @@
     color: var(--color-on-surface);
   }
 }
+
+.font-serif-epic { font-family: var(--font-serif-epic); }
+.gold-glow { text-shadow: 0 0 30px rgba(212, 175, 55, 0.45), 0 0 60px rgba(212, 175, 55, 0.2); }
+.gold-border-glow { box-shadow: 0 0 25px rgba(212, 175, 55, 0.2), inset 0 0 15px rgba(212, 175, 55, 0.08); }

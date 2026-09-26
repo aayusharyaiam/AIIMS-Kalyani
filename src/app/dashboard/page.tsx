@@ -58,7 +58,7 @@ export default function Dashboard() {
 </div>
 <div>
 <div className="flex items-center gap-space-xs flex-wrap">
-<h2 className="font-headline-sm text-headline-sm text-[#f8fafc] font-semibold tracking-tight">Welcome back, Sarah J. ÔÇó ANOINTED DELEGATE // HOUSE OF ATHENA</h2>
+<h2 className="font-headline-sm text-headline-sm text-[#f8fafc] font-semibold tracking-tight">Welcome back, Sarah J. • ANOINTED DELEGATE // HOUSE OF ATHENA</h2>
 <span className="px-2.5 py-0.5 rounded-full bg-[#d4af37]/15 border border-[#d4af37]/30 text-primary text-label-caps font-code-mono flex items-center gap-1 shadow-sm">
 <span className="material-symbols-outlined text-[14px]">verified</span>
                 ORACLE VERIFIED
@@ -72,9 +72,9 @@ export default function Dashboard() {
 <span className="font-code-mono text-[#d4af37]">HERO ID:</span>
 <span className="font-code-mono text-on-surface font-bold">#HERO-8841</span>
 </span>
-<span className="text-outline-variant">ÔÇó</span>
+<span className="text-outline-variant">•</span>
 <span>Guild / Division: <strong className="text-on-surface font-medium">Asclepius Clinical MedTech &amp; Bio-Informatics</strong></span>
-<span className="text-outline-variant">ÔÇó</span>
+<span className="text-outline-variant">•</span>
 <span className="text-primary font-medium flex items-center gap-1"><span className="material-symbols-outlined text-[15px]">token</span> Sacred Talisman: Golden Laurel Wristband #WB-9921</span>
 </div>
 </div>
@@ -110,7 +110,7 @@ export default function Dashboard() {
 <span className="material-symbols-outlined text-[#d4af37] text-[26px]">shield</span>
 <div>
 <h3 className="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold tracking-wide">GOLDEN FLEECE ALL-ACCESS</h3>
-<p className="font-label-caps text-label-caps text-primary">ODYSSEY 2026 ÔÇó SACRED DECK</p>
+<p className="font-label-caps text-label-caps text-primary">ODYSSEY 2026 • SACRED DECK</p>
 </div>
 </div>
 <div className="flex flex-col items-end">
@@ -205,7 +205,7 @@ export default function Dashboard() {
 {/* Pass Metadata Strings */}
 <div className="w-full flex items-center justify-between mt-space-sm pt-space-xs px-space-xs text-on-surface-variant font-code-mono text-body-sm">
 <span>ORACLE SEAL: #8F7A-22DE</span>
-<span className="text-[#d4af37] font-semibold">VALID ACROSS ALL 4 SACRED DAYS: APR 16ÔÇô19, 2026</span>
+<span className="text-[#d4af37] font-semibold">VALID ACROSS ALL 4 SACRED DAYS: APR 16–19, 2026</span>
 </div>
 </div>
 {/* Pass Perks Summary */}
@@ -268,12 +268,12 @@ export default function Dashboard() {
 <span className="material-symbols-outlined text-[15px] text-primary">groups</span>
 <span>Guild: <strong className="text-on-surface">NeuroCraft</strong> (Leader)</span>
 </span>
-<span>ÔÇó</span>
+<span>•</span>
 <span className="flex items-center gap-1">
 <span className="material-symbols-outlined text-[15px]">schedule</span>
 <span>10:00 AM</span>
 </span>
-<span>ÔÇó</span>
+<span>•</span>
 <span className="flex items-center gap-1">
 <span className="material-symbols-outlined text-[15px]">location_on</span>
 <span>Asclepius Bio-Informatics Lab, Core-3</span>
@@ -309,12 +309,12 @@ export default function Dashboard() {
 <span className="material-symbols-outlined text-[15px] text-secondary">person</span>
 <span>Solo Attendee</span>
 </span>
-<span>ÔÇó</span>
+<span>•</span>
 <span className="flex items-center gap-1">
 <span className="material-symbols-outlined text-[15px]">schedule</span>
 <span>05:00 PM</span>
 </span>
-<span>ÔÇó</span>
+<span>•</span>
 <span className="flex items-center gap-1">
 <span className="material-symbols-outlined text-[15px]">location_on</span>
 <span>Open Air Amphitheatre</span>
@@ -351,7 +351,7 @@ export default function Dashboard() {
 <span className="font-label-caps text-label-caps text-on-surface-variant">SANCTUARY BERTH</span>
 <span className="font-code-mono text-body-sm text-primary font-semibold">ROOM #204</span>
 </div>
-<p className="font-label-md text-label-md text-on-surface font-bold mt-0.5">Cadet Sanctuary A ÔÇó Twin Berth #204</p>
+<p className="font-label-md text-label-md text-on-surface font-bold mt-0.5">Cadet Sanctuary A • Twin Berth #204</p>
 <div className="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-surface-container-highest/50 font-body-sm text-[12px] text-on-surface-variant">
 <div>
 <span className="block text-[#d4af37]/70 font-code-mono text-[10px]">CHECK-IN</span>
@@ -365,7 +365,7 @@ export default function Dashboard() {
 </div>
 <div className="flex items-center justify-between text-body-sm px-1 mb-space-xs">
 <span className="text-on-surface-variant">Tribute Status:</span>
-<span className="font-code-mono text-label-md text-on-surface font-bold">OFFICIALLY CONSECRATED <span className="text-[#d4af37] text-body-sm font-semibold">(PAID Ôé╣1,497)</span></span>
+<span className="font-code-mono text-label-md text-on-surface font-bold">OFFICIALLY CONSECRATED <span className="text-[#d4af37] text-body-sm font-semibold">(PAID ₹1,497)</span></span>
 </div>
 </div>
 <div className="flex items-center gap-space-xs mt-space-sm pt-space-xs border-t border-surface-container-highest/40">

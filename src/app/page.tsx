@@ -21,12 +21,12 @@ export default function Home() {
 <div className="inline-flex items-center gap-space-xs px-4 py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-md border border-primary/30 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
 <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_10px_#f2ca50]"></span>
 <span className="font-label-md text-[11px] text-primary tracking-[0.2em] uppercase font-bold">AIIMS KALYANI PRESENTS</span>
-<span className="text-outline-variant">Ô£ª</span>
+<span className="text-outline-variant">✦</span>
 <span className="font-serif-epic text-[11px] text-on-surface tracking-wider">THE 2026 OLYMPIAN CONVERGENCE</span>
 </div>
 <div className="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant">
 <span className="material-symbols-outlined text-[17px] text-primary">temple_buddhist</span>
-<span className="text-on-surface tracking-widest font-semibold uppercase">APRIL 16 ÔÇö 19, 2026</span>
+<span className="text-on-surface tracking-widest font-semibold uppercase">APRIL 16 — 19, 2026</span>
 <span className="text-outline">/</span>
 <span className="text-primary tracking-widest uppercase">ACROPOLIS OF KALYANI</span>
 </div>
@@ -47,7 +47,7 @@ export default function Home() {
         </h1>
 <div className="flex items-center justify-center gap-2 mt-1">
 <span className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-primary"></span>
-<span className="font-serif-epic text-xs sm:text-sm text-secondary tracking-[0.3em] uppercase">BOOK IV ÔÇó EDITION 2026</span>
+<span className="font-serif-epic text-xs sm:text-sm text-secondary tracking-[0.3em] uppercase">BOOK IV • EDITION 2026</span>
 <span className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-primary"></span>
 </div>
 </div>
@@ -81,7 +81,7 @@ export default function Home() {
 </a>
 <div className="hidden md:flex items-center gap-3 font-serif-epic text-xs text-on-surface-variant">
 <span className="tracking-widest">ITHACA AWAITS</span>
-<span className="text-primary">Ô£ª</span>
+<span className="text-primary">✦</span>
 <span className="tracking-widest">OLYMPIAN ACCREDITATION</span>
 </div>
 </div>
@@ -155,7 +155,7 @@ export default function Home() {
 </div>
 <div className="p-space-md rounded-xl bg-surface-container-high/70 border border-outline-variant/40 flex flex-col relative overflow-hidden group hover:border-primary/40 transition-colors">
 <div className="flex items-baseline gap-0.5">
-<span className="font-serif-epic text-headline-sm text-primary">Ôé╣</span>
+<span className="font-serif-epic text-headline-sm text-primary">₹</span>
 <span className="font-serif-epic text-headline-md text-primary tracking-tight">15</span>
 <span className="font-serif-epic text-headline-sm text-primary">L+</span>
 </div>
@@ -219,10 +219,10 @@ export default function Home() {
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dark energetic live rock band on stage with intense cyan and violet silhouette stage lights, atmospheric smoke haze, electric guitar in foreground, cinematic crowd in shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZf0CyalxVRYCMuwOR9TWG3h0bUTdIxz1Rn3wj-2HHJ7X9zwlhW1UIrJYj8KjbnG26GxK2WRGOtCD6JiEYoGZcd7t-DjlNzLuFu1Zxwii5sqmtqBhoOjUhDPgeZ5Sshlhg3W1ozPAjpkmGJ1o4QOFTfqxK31-ewNYJyu0QUul5scZ2OosXVY8nJpeE3KVkNu5j3lFGDbiVr1NVRk2-bhHOqCiotDC48YuuQgQavFkOQiwC-uZQym0A"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary-container/90 backdrop-blur-md text-white font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
-            APOLLO ÔÇó BAND BATTLE
+            APOLLO • BAND BATTLE
           </span>
 <span className="absolute top-3 right-3 px-2.5 py-0.5 rounded bg-surface-container-lowest/90 text-primary border border-primary/30 font-serif-epic text-[11px] font-bold">
-            Ôé╣80,000 TRIBUTE
+            ₹80,000 TRIBUTE
           </span>
 </div>
 <div className="p-space-md flex flex-col flex-1 justify-between gap-4">
@@ -236,7 +236,7 @@ export default function Home() {
 </div>
 <div className="pt-3 border-t border-surface-container-high flex flex-col gap-2">
 <div className="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
-<span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">schedule</span> Day 2 ÔÇó 5:00 PM</span>
+<span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">schedule</span> Day 2 • 5:00 PM</span>
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">temple_hindu</span> Grand Colosseum</span>
 </div>
 <a className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
@@ -252,10 +252,10 @@ export default function Home() {
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic biomedical hackathon with glowing cyan neural network holographic visualization, laptops, dark room with ambient neon blue lighting, students collaborating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRuLclTeAgG7kto_3h3-tHrBhPuGp0XNYMOx5ZdXWkNdRjO2zTZOy_Hp0Dsi_mDvAEjWKgQObD9op5zLaRIMd0zXu8h7poecJ8myGHLAVdh8Dka0zUkgenz-oCgRuixKiaq7_ZuZIdQDgY407KAr5aapEP66zy2JVkwFqhktD2XiBfX3g4C4x98FmN5_KO6wUPcKR-tsNBeXcgoar96ly4JH5qa3N1DX2HsEC68mxFKAyG5MCchkWk"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/40 backdrop-blur-md text-primary font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
-            ATHENA ÔÇó CLINICAL HACK
+            ATHENA • CLINICAL HACK
           </span>
 <span className="absolute top-3 right-3 px-2.5 py-0.5 rounded bg-surface-container-lowest/90 text-primary border border-primary/30 font-serif-epic text-[11px] font-bold">
-            Ôé╣1,00,000 TRIBUTE
+            ₹1,00,000 TRIBUTE
           </span>
 </div>
 <div className="p-space-md flex flex-col flex-1 justify-between gap-4">
@@ -285,10 +285,10 @@ export default function Home() {
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic contemporary dance troupe performing on dark stage with dramatic overhead spotlight beams, flowing cosmic costumes, theatrical lighting in violet and deep cyan hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-xiA3iQefNIPx-qIo1Ei1RoRXaf8AzUyT--CIf14o2O56Ax-q9eQjDBIy8j7ff_gYt5ob7Bpqk27b7RWFwHqeeBow63_sH2xESEQ9yTyubp0Gu2KiUZrtt77J2e3CQX34u9y4HEhdbm6em7_Y_jsddRkdE0LufucxRzeb3G7r8uYQnlh25JQK4Vcag8W0n9MF3UvlUZLE7FcHXkj25suVMcoIh1lzZXbaclBpiNIJyY9Wj9xTGYLs"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary-container/90 backdrop-blur-md text-white font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
-            MUSES ÔÇó CHOREO
+            MUSES • CHOREO
           </span>
 <span className="absolute top-3 right-3 px-2.5 py-0.5 rounded bg-surface-container-lowest/90 text-secondary border border-secondary/30 font-serif-epic text-[11px] font-bold">
-            Ôé╣75,000 TRIBUTE
+            ₹75,000 TRIBUTE
           </span>
 </div>
 <div className="p-space-md flex flex-col flex-1 justify-between gap-4">
@@ -302,7 +302,7 @@ export default function Home() {
 </div>
 <div className="pt-3 border-t border-surface-container-high flex flex-col gap-2">
 <div className="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
-<span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-secondary">schedule</span> Day 3 ÔÇó 6:30 PM</span>
+<span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-secondary">schedule</span> Day 3 • 6:30 PM</span>
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-secondary">theater_comedy</span> Main Amphitheater</span>
 </div>
 <a className="mt-2 inline-flex items-center justify-between text-secondary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
@@ -318,10 +318,10 @@ export default function Home() {
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dramatic auditorium quiz competition setting, spotlight on contestant buzzer podiums, digital scoreboard glowing in electric blue, dark atmospheric background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAptJsP5BpfQfzpeaaCARQPtg9JC1lJUMbjTJQM5Y8jGRePCrUs6HJjWmkzCisfrxhbTVyrhM2n04_HBWs-jJci4QH-gz5Q0MkGNTzmr8fP60jMdHQupzRDM7D4jY1pvEliIKMXMYvTdara1AozOD0E11TAZuifI6fJHRyuB_3y0hazYd52a__IrI0y36ViUWvs6N37UdoE_hiXyTRtHbD5GYmHH264mYw6z5TvmELmvvHBjB9ps7xG"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/40 backdrop-blur-md text-primary font-serif-epic text-[10px] uppercase tracking-wider font-semibold">
-            DELPHI ÔÇó NATIONAL QUIZ
+            DELPHI • NATIONAL QUIZ
           </span>
 <span className="absolute top-3 right-3 px-2.5 py-0.5 rounded bg-surface-container-lowest/90 text-primary border border-primary/30 font-serif-epic text-[11px] font-bold">
-            Ôé╣40,000 TRIBUTE
+            ₹40,000 TRIBUTE
           </span>
 </div>
 <div className="p-space-md flex flex-col flex-1 justify-between gap-4">
@@ -335,7 +335,7 @@ export default function Home() {
 </div>
 <div className="pt-3 border-t border-surface-container-high flex flex-col gap-2">
 <div className="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
-<span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">schedule</span> Day 2 ÔÇó 11:00 AM</span>
+<span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">schedule</span> Day 2 • 11:00 AM</span>
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[15px] text-primary">school</span> Hippocrates LT</span>
 </div>
 <a className="mt-2 inline-flex items-center justify-between text-primary font-serif-epic text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform font-bold" href="#">
@@ -354,7 +354,7 @@ export default function Home() {
 </a>
 </div>
 </section>
-{/* THE NIGHT AWAITS ÔÇö SIRENS' CALL (PRONITE SHOWCASE) */}
+{/* THE NIGHT AWAITS — SIRENS' CALL (PRONITE SHOWCASE) */}
 <section className="relative w-full px-gutter-mobile lg:px-margin py-space-xl overflow-hidden" id="pronite">
 {/* Celestial Greek Nebula Aura */}
 <div className="absolute inset-0 bg-gradient-to-r from-primary-container/15 via-[#0a0c10] to-secondary-container/15 pointer-events-none rounded-3xl"></div>
@@ -369,7 +369,7 @@ export default function Home() {
             WHEN NIGHT FALLS UPON MOUNT OLYMPUS
           </h2>
 <p className="font-serif-epic text-secondary text-sm tracking-widest uppercase mt-1">
-            THE SIRENS' CALL ÔÇö 4 UNBOUND NIGHTS OF MUSIC &amp; EUPHORIA
+            THE SIRENS' CALL — 4 UNBOUND NIGHTS OF MUSIC &amp; EUPHORIA
           </p>
 <p className="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
             When dusk settles over the Kalyani Acropolis, the medical sanctuary ignites into an Olympian arena. 10,000 mortal voices chanting under starlit skies.
@@ -409,7 +409,7 @@ export default function Home() {
               </h3>
 <p className="font-label-md text-label-md text-primary flex items-center gap-1.5 mt-1">
 <span className="material-symbols-outlined text-[16px]">location_on</span>
-                CELESTIAL OPEN ARENA ÔÇó APRIL 18 &amp; 19
+                CELESTIAL OPEN ARENA • APRIL 18 &amp; 19
               </p>
 </div>
 <div className="flex items-center gap-2">
@@ -438,7 +438,7 @@ export default function Home() {
 <span className="material-symbols-outlined text-primary text-[20px]">workspace_premium</span>
 <span className="font-serif-epic text-primary text-[17px] font-bold">Mount Olympus VIP Front Stage</span>
 </div>
-<span className="font-serif-epic text-primary text-[19px] font-black">Ôé╣499</span>
+<span className="font-serif-epic text-primary text-[19px] font-black">₹499</span>
 </div>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
               Front-row barricade access, priority VIP lane, golden laurel glow wristband, ambrosia lounge voucher, and commemorative Odyssey talisman.
@@ -485,7 +485,7 @@ export default function Home() {
 <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Single &amp; Twin shared berths in secure student hostel residential blocks.</p>
 </div>
 <div className="flex items-baseline gap-1 my-2">
-<span className="font-serif-epic text-headline-md text-primary font-bold">Ôé╣499</span>
+<span className="font-serif-epic text-headline-md text-primary font-bold">₹499</span>
 <span className="font-label-md text-label-md text-on-surface-variant">/ voyager / night</span>
 </div>
 <ul className="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant pt-2 border-t border-surface-container-high">
@@ -522,7 +522,7 @@ export default function Home() {
 <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Air-conditioned suites in AIIMS International Quarters for faculty and senior contingents.</p>
 </div>
 <div className="flex items-baseline gap-1 my-2">
-<span className="font-serif-epic text-headline-md text-primary font-bold">Ôé╣1,299</span>
+<span className="font-serif-epic text-headline-md text-primary font-bold">₹1,299</span>
 <span className="font-label-md text-label-md text-on-surface-variant">/ chamber / night</span>
 </div>
 <ul className="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant pt-2 border-t border-surface-container-highest">
@@ -558,7 +558,7 @@ export default function Home() {
 </div>
 <div className="p-3 rounded-xl bg-surface-container-high/50 border border-outline-variant/30 flex flex-col">
 <span className="font-serif-epic text-xs text-on-surface uppercase tracking-wider">Sacred Peace Hours</span>
-<p className="text-[12px] mt-0.5">AIIMS Kalyani enforces an inviolable zero-substance code. Hostel corridors observe sacred peace hours between 01:00 AM ÔÇö 06:00 AM.</p>
+<p className="text-[12px] mt-0.5">AIIMS Kalyani enforces an inviolable zero-substance code. Hostel corridors observe sacred peace hours between 01:00 AM — 06:00 AM.</p>
 </div>
 <div className="p-3 rounded-xl bg-surface-container-high/50 border border-outline-variant/30 flex flex-col">
 <span className="font-serif-epic text-xs text-on-surface uppercase tracking-wider">Hermes Direct Hotline</span>
@@ -688,7 +688,7 @@ export default function Home() {
 <span className="flex items-center gap-1.5">
 <span className="material-symbols-outlined text-[16px] text-primary">qr_code</span> Instant Digital Olympian Pass
           </span>
-<span className="text-primary">Ô£ª</span>
+<span className="text-primary">✦</span>
 <span className="flex items-center gap-1.5">
 <span className="material-symbols-outlined text-[16px] text-primary">verified_user</span> Official AIIMS Kalyani Gateway
           </span>
@@ -700,7 +700,7 @@ export default function Home() {
 
 </main>
 {/* FOOTER WITH MYTHIC TOUCHES */}
-<footer className="w-full bg-[#0a0c10] border-t border-primary/20 relative z-20"><div className="w-full px-gutter-mobile lg:px-margin py-space-xl flex flex-col gap-space-xl"><div className="grid grid-cols-1 md:grid-cols-4 gap-space-lg"><div className="flex flex-col gap-space-sm md:col-span-1"><div className="flex items-center gap-space-xs"><img alt="Odyssey Greek Mythology Logo" className="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ue3PAJ7JV2m9P92IpdZxHnO4hmQzHDNyTW8XHWx2glR93l6i2QIKMMqq0JQR0cdDXg8urOVp35-W1ecJFpBFuWUN3Yhb6LcjgzbtgaUYwzKbY1pQOpjPe6wpYBdKXdWZusOCy-T2Cd1KDTII__OWj2JrhYBbuEfDh_OJOquxiU75hOUcxPeUUIGS4oHG5bsnFStBC0litjPjGgjX9zlbxB3zdgo7jRwS4VBiUVOCf3wOwqoSFIKcSiGBg"/></div><p className="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-2">The premier biomedical, cultural, and intellectual festival of All India Institute of Medical Sciences, Kalyani. A mythic convergence of clinical intellect, heroic arts, and starlit celebration.</p><div className="flex items-center gap-space-xs text-on-surface-variant mt-1"><span className="material-symbols-outlined text-[18px] text-primary">location_on</span><span className="font-label-md text-label-md">NH-34 Connector, Basantapur, Kalyani, WB 741245</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Sacred Paths</span><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="events" href="#destinations">Agon &amp; Athlos Trials</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pronite" href="#pronite">Sirens' Call Pronite</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="accommodation" href="#accommodation">Elysian Chambers</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="core-team" href="#team">High Council of Elders</a></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Oracle Directives</span><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#">Acolyte Portal Access</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Emissary Inquiries</a><div className="mt-space-xs flex items-center gap-space-xs text-on-surface-variant"><span className="material-symbols-outlined text-[18px] text-primary">mail</span><span className="font-label-md text-label-md">odyssey@aiimskalyani.edu.in</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Olympian Signals</span><div className="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Instagram" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">public</span></a><a aria-label="LinkedIn" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">hub</span></a><a aria-label="YouTube" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">smart_display</span></a></div></div></div><div className="pt-space-md border-t border-primary/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p className="font-serif-epic text-xs text-on-surface-variant tracking-wider">┬® 2026 ODYSSEY ÔÇó AIIMS Kalyani. In the honor of Apollo &amp; Athena.</p><div className="flex items-center gap-space-md font-serif-epic text-xs text-on-surface-variant tracking-wider"><a className="hover:text-primary transition-colors" href="#">Sacred Decrees</a><a className="hover:text-primary transition-colors" href="#">Code of Honor</a></div></div></div></footer>
+<footer className="w-full bg-[#0a0c10] border-t border-primary/20 relative z-20"><div className="w-full px-gutter-mobile lg:px-margin py-space-xl flex flex-col gap-space-xl"><div className="grid grid-cols-1 md:grid-cols-4 gap-space-lg"><div className="flex flex-col gap-space-sm md:col-span-1"><div className="flex items-center gap-space-xs"><img alt="Odyssey Greek Mythology Logo" className="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ue3PAJ7JV2m9P92IpdZxHnO4hmQzHDNyTW8XHWx2glR93l6i2QIKMMqq0JQR0cdDXg8urOVp35-W1ecJFpBFuWUN3Yhb6LcjgzbtgaUYwzKbY1pQOpjPe6wpYBdKXdWZusOCy-T2Cd1KDTII__OWj2JrhYBbuEfDh_OJOquxiU75hOUcxPeUUIGS4oHG5bsnFStBC0litjPjGgjX9zlbxB3zdgo7jRwS4VBiUVOCf3wOwqoSFIKcSiGBg"/></div><p className="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-2">The premier biomedical, cultural, and intellectual festival of All India Institute of Medical Sciences, Kalyani. A mythic convergence of clinical intellect, heroic arts, and starlit celebration.</p><div className="flex items-center gap-space-xs text-on-surface-variant mt-1"><span className="material-symbols-outlined text-[18px] text-primary">location_on</span><span className="font-label-md text-label-md">NH-34 Connector, Basantapur, Kalyani, WB 741245</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Sacred Paths</span><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="events" href="#destinations">Agon &amp; Athlos Trials</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pronite" href="#pronite">Sirens' Call Pronite</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="accommodation" href="#accommodation">Elysian Chambers</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="core-team" href="#team">High Council of Elders</a></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Oracle Directives</span><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#">Acolyte Portal Access</a><a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Emissary Inquiries</a><div className="mt-space-xs flex items-center gap-space-xs text-on-surface-variant"><span className="material-symbols-outlined text-[18px] text-primary">mail</span><span className="font-label-md text-label-md">odyssey@aiimskalyani.edu.in</span></div></div><div className="flex flex-col gap-space-xs"><span className="font-serif-epic text-xs text-primary uppercase tracking-[0.2em] font-bold mb-space-xs">Olympian Signals</span><div className="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Instagram" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">public</span></a><a aria-label="LinkedIn" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">hub</span></a><a aria-label="YouTube" className="p-2.5 rounded-full bg-surface-container border border-outline-variant/30 hover:border-primary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">smart_display</span></a></div></div></div><div className="pt-space-md border-t border-primary/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p className="font-serif-epic text-xs text-on-surface-variant tracking-wider">┬® 2026 ODYSSEY • AIIMS Kalyani. In the honor of Apollo &amp; Athena.</p><div className="flex items-center gap-space-md font-serif-epic text-xs text-on-surface-variant tracking-wider"><a className="hover:text-primary transition-colors" href="#">Sacred Decrees</a><a className="hover:text-primary transition-colors" href="#">Code of Honor</a></div></div></div></footer>
     </>
   );
 }
