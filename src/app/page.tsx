@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,14 +15,15 @@ export default function Home() {
           AIIMS Kalyani Portal
         </h2>
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mt-8">
-          Welcome to the Greek Mythos Experience. Awaiting Stitch design components to render the Acropolis Dashboard and Gates of Olympus...
+          The Gates of Olympus have been unlocked.
         </p>
         
-        <div className="mt-12 p-6 rounded-lg border border-slate-800 bg-slate-900/50 backdrop-blur-sm">
-          <p className="text-amber-400 font-mono text-sm">
-            Ready to integrate the provided Stitch designs once the URLs are provided.
-          </p>
-        </div>
+        <Link 
+          href="/login" 
+          className="mt-12 py-3.5 px-8 rounded bg-gradient-to-r from-[#D4AF37] via-[#FFD700] to-[#E5A823] text-[#241a00] font-serif text-lg font-extrabold uppercase tracking-widest hover:brightness-110 shadow-[0_0_24px_rgba(212,175,55,0.4)] transition-all"
+        >
+          Enter the Gates of Olympus (Login)
+        </Link>
       </div>
     </main>
   );
