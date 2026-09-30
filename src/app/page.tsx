@@ -10,7 +10,13 @@ import {
 import { EventExplorer } from "@/components/EventExplorer";
 import { FestivalGallery } from "@/components/FestivalGallery";
 import { Countdown } from "@/components/Countdown";
-import { MediaImage, Reveal, SectionHeading } from "@/components/ui";
+import {
+  MediaImage,
+  Reveal,
+  SectionHeading,
+  SplitText,
+  Magnetic,
+} from "@/components/ui";
 import { faqs, festival } from "@/lib/festival";
 
 const stripItems = [
@@ -44,9 +50,12 @@ export default function Home() {
               AIIMS KALYANI PRESENTS <strong>THE THIRD CHAPTER</strong>
             </div>
             <h1 id="hero-title">
-              ELYSSIA<span>3.0</span>
+              <SplitText text="ELYSSIA" />
+              <span className="hero-edition">3.0</span>
             </h1>
-            <p className="hero-subtitle">YOUR ODYSSEY AWAITS.</p>
+            <p className="hero-subtitle">
+              <SplitText text="YOUR ODYSSEY AWAITS." by="word" />
+            </p>
             <div className="hero-rule" />
             <div className="hero-meta">
               <span>02 — 05 NOVEMBER 2026</span>
@@ -64,23 +73,27 @@ export default function Home() {
               that become a part of you. This is your call to the extraordinary.
             </p>
             <div className="hero-actions">
-              <a
-                href={festival.registrationUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="button button-primary"
-              >
-                Enter the odyssey <ArrowUpRight size={17} />
-              </a>
-              <a
-                href={festival.brochure}
-                target="_blank"
-                rel="noreferrer"
-                className="button button-outline"
-              >
-                <BookOpen size={17} />
-                Explore brochure
-              </a>
+              <Magnetic>
+                <a
+                  href={festival.registrationUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button button-primary"
+                >
+                  Enter the odyssey <ArrowUpRight size={17} />
+                </a>
+              </Magnetic>
+              <Magnetic>
+                <a
+                  href={festival.brochure}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button button-outline"
+                >
+                  <BookOpen size={17} />
+                  Explore brochure
+                </a>
+              </Magnetic>
             </div>
           </div>
         </div>
@@ -153,7 +166,7 @@ export default function Home() {
         </div>
       </div>
       <section id="our-story" className="section container">
-        <Reveal className="intro-grid">
+        <Reveal className="intro-grid" variant="left" stagger={120}>
           <div className="intro-copy">
             <div className="eyebrow">
               <span>01</span>
@@ -192,7 +205,7 @@ export default function Home() {
             </div>
           </div>
         </Reveal>
-        <Reveal className="stats-row">
+        <Reveal className="stats-row" stagger={100}>
           <div className="stat">
             <strong>
               04<span>.</span>
@@ -247,7 +260,7 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="container">
-          <Reveal>
+          <Reveal variant="right">
             <p className="eyebrow">
               <Sparkles size={13} />
               WHEN THE STARS COME OUT
@@ -272,7 +285,7 @@ export default function Home() {
         </span>
       </section>
       <section className="section container">
-        <Reveal>
+        <Reveal variant="fade" stagger={110}>
           <SectionHeading
             number="03"
             eyebrow="THE ELYSSIA ARCHIVES"
@@ -288,7 +301,7 @@ export default function Home() {
           </SectionHeading>
           <FestivalGallery preview />
         </Reveal>
-        <Reveal className="brochure-callout">
+        <Reveal className="brochure-callout" variant="right">
           <div>
             <BookOpen />
             <div>
@@ -310,7 +323,7 @@ export default function Home() {
       </section>
       <Countdown />
       <section className="section container">
-        <Reveal className="faq-layout">
+        <Reveal className="faq-layout" stagger={130} variant="left">
           <div className="faq-intro">
             <div className="eyebrow">
               <span>04</span>

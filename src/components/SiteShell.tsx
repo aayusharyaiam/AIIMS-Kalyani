@@ -12,7 +12,7 @@ import {
   MapPin,
   Mail,
 } from "lucide-react";
-import { Modal } from "@/components/ui";
+import { Modal, Magnetic } from "@/components/ui";
 import { festival } from "@/lib/festival";
 import { MotionToggle } from "@/components/MotionToggle";
 
@@ -26,13 +26,15 @@ const navigation = [
 
 export function Brand() {
   return (
-    <Link href="/" className="brand" aria-label="Elyssia 3.0 home">
-      <Image src="/images/elyssia-logo.webp" alt="" width={50} height={50} />
-      <span>
-        ELYSSIA<span className="brand-edition">3.0</span>
-        <small>AIIMS KALYANI</small>
-      </span>
-    </Link>
+    <Magnetic>
+      <Link href="/" className="brand" aria-label="Elyssia 3.0 home">
+        <Image src="/images/elyssia-logo.webp" alt="" width={50} height={50} />
+        <span>
+          ELYSSIA<span className="brand-edition">3.0</span>
+          <small>AIIMS KALYANI</small>
+        </span>
+      </Link>
+    </Magnetic>
   );
 }
 
