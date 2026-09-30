@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { gallery } from "@/lib/festival";
-import { MediaImage, Modal } from "@/components/ui";
+import { MediaImage, Modal, TiltCard } from "@/components/ui";
 
 export function FestivalGallery({ preview = false }: { preview?: boolean }) {
   const [category, setCategory] = useState("All memories");
@@ -50,27 +50,28 @@ export function FestivalGallery({ preview = false }: { preview?: boolean }) {
       )}
       <div className={preview ? "gallery-preview" : "gallery-page-grid"}>
         {photos.map((item, index) => (
-          <button
-            type="button"
-            key={item.src}
-            className="gallery-tile"
-            aria-label={`Open photograph: ${item.title}`}
-            onClick={() => setSelected(index)}
-          >
-            <MediaImage
-              src={item.src}
-              preload={!preview && index === 0}
-              alt={item.alt}
-              sizes="(max-width: 600px) 90vw, 50vw"
-            />
-            <span className="gallery-caption">
-              <span>
-                <small>THE ELYSSIA ARCHIVES</small>
-                <strong>{item.title}</strong>
+          <TiltCard className="gallery-tile-shell" key={item.src}>
+            <button
+              type="button"
+              className="gallery-tile"
+              aria-label={`Open photograph: ${item.title}`}
+              onClick={() => setSelected(index)}
+            >
+              <MediaImage
+                src={item.src}
+                preload={!preview && index === 0}
+                alt={item.alt}
+                sizes="(max-width: 600px) 90vw, 50vw"
+              />
+              <span className="gallery-caption">
+                <span>
+                  <small>THE ELYSSIA ARCHIVES</small>
+                  <strong>{item.title}</strong>
+                </span>
+                <ArrowUpRight />
               </span>
-              <ArrowUpRight />
-            </span>
-          </button>
+            </button>
+          </TiltCard>
         ))}
       </div>
       {photo && selected !== null && (

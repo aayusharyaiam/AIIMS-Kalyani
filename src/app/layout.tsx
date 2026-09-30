@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { SiteFooter, SiteHeader } from "@/components/SiteShell";
+import { ScrollProgress, SiteLoader } from "@/components/ExperienceMotion";
 import "./globals.css";
 
 const display = localFont({
@@ -65,6 +66,8 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable}`}
     >
       <body>
+        <SiteLoader />
+        <ScrollProgress />
         <noscript>
           <style>{".image-skeleton{display:none!important}"}</style>
         </noscript>

@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { categories, events, type FestivalEvent } from "@/lib/festival";
 import { useSavedEvents } from "@/lib/planner";
-import { MediaImage, Modal } from "@/components/ui";
+import { MediaImage, Modal, TiltCard } from "@/components/ui";
 
 export function EventCard({
   event,
@@ -27,53 +27,55 @@ export function EventCard({
   const [error, setError] = useState("");
   const isSaved = saved.includes(event.id);
   return (
-    <article className="event-card">
-      <div className="event-visual">
+    <TiltCard className="event-card-shell">
+      <article className="event-card">
+        <div className="event-visual">
         <MediaImage
           src={event.image}
           alt={event.imageAlt}
           sizes="(max-width: 600px) 100vw, (max-width: 850px) 50vw, 33vw"
         />
         <span className="event-category">{event.category}</span>
-        <button
-          type="button"
-          className="icon-button save-event"
-          aria-label={`${isSaved ? "Unsave" : "Save"} ${event.title}`}
-          aria-pressed={isSaved}
-          onClick={() => {
-            try {
-              toggle(event.id);
-              setError("");
-            } catch {
-              setError(
-                "Your browser could not save this event. Enable local storage to use the shortlist.",
-              );
-            }
-          }}
-        >
-          {isSaved ? <Check size={15} /> : <Bookmark size={15} />}
-        </button>
-      </div>
-      <div className="event-card-body">
-        <div className="event-number">{event.club}</div>
-        <h3>{event.title}</h3>
-        <p>{event.description}</p>
-        {error && <p role="alert">{error}</p>}
-        <div className="event-card-footer">
-          <span>
-            <MapPin size={12} />
-            AIIMS Kalyani
-          </span>
           <button
             type="button"
-            className="event-detail-button"
-            onClick={() => onDetails(event)}
+            className="icon-button save-event"
+            aria-label={`${isSaved ? "Unsave" : "Save"} ${event.title}`}
+            aria-pressed={isSaved}
+            onClick={() => {
+              try {
+                toggle(event.id);
+                setError("");
+              } catch {
+                setError(
+                  "Your browser could not save this event. Enable local storage to use the shortlist.",
+                );
+              }
+            }}
           >
-            Explore event <ArrowUpRight size={17} />
+            {isSaved ? <Check size={15} /> : <Bookmark size={15} />}
           </button>
         </div>
-      </div>
-    </article>
+        <div className="event-card-body">
+          <div className="event-number">{event.club}</div>
+          <h3>{event.title}</h3>
+          <p>{event.description}</p>
+          {error && <p role="alert">{error}</p>}
+          <div className="event-card-footer">
+            <span>
+              <MapPin size={12} />
+              AIIMS Kalyani
+            </span>
+            <button
+              type="button"
+              className="event-detail-button"
+              onClick={() => onDetails(event)}
+            >
+              Explore event <ArrowUpRight size={17} />
+            </button>
+          </div>
+        </div>
+      </article>
+    </TiltCard>
   );
 }
 
