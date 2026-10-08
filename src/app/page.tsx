@@ -31,13 +31,18 @@ export default function Home() {
   return (
     <main id="main-content">
       <section className="hero" aria-labelledby="hero-title">
-        <MediaImage
-          src="/images/hero-trojan.webp"
-          alt="A warrior beneath a monumental Trojan horse, surrounded by an ember-lit sky"
-          className="hero-art"
-          preload
-          sizes="100vw"
-        />
+        <div className="hero-art" aria-hidden="true">
+          <video
+            src="https://res.cloudinary.com/kpa6g7an/video/upload/v1791477237/elyssia.mp4"
+            poster="/images/hero-trojan.webp"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            tabIndex={-1}
+          />
+        </div>
         <div className="embers" aria-hidden="true">
           {Array.from({ length: 6 }, (_, i) => (
             <i key={i} />
