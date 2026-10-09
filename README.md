@@ -46,7 +46,7 @@ All pages share navigation, a responsive mobile menu, branded browser titles, an
 
 ## Editing content
 
-- `src/lib/festival.ts`: verified dates, registration links, event descriptions, brochure page references, gallery captions, FAQs.
+- `src/lib/festival.ts`: verified dates, overall club programmes, WhatsApp registration/Instagram links, brochure schedules, gallery captions, and FAQs.
 - `src/app/page.tsx`: home-page composition and hero content.
 - `src/app/globals.css`: design tokens, responsive layouts, loading states, and animations.
 - `src/components/`: shared navigation, event discovery, gallery, planner, countdown, and UI primitives.
@@ -76,9 +76,9 @@ You can also set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to another Chrome/Chromiu
 
 ## Before public launch
 
-1. Confirm the delegate and category Google Forms are open. They are authentic links from the brochure, but acceptance of registrations is controlled by their owners.
+1. Confirm the delegate and category Google Forms are open. The delegate form comes from the brochure; the club forms and Instagram links are reproduced from the organising team’s WhatsApp message, and acceptance of registrations is controlled by the form owners.
 2. Confirm organiser attribution: the supplied brochure identifies **AIIMS Kalyani**; an AIIMS Patna co-organiser credit was not present in the supplied references.
-3. Supply official social handles/email, approved 2026 headliner announcements, and any drone footage or logo animation. No unverified accounts or substitute artist announcements are used.
+3. Supply an official email, approved 2026 headliner announcements, and any drone footage or logo animation. The club Instagram links currently shown are the links supplied by the organising team.
 4. Confirm permission to publicly use the supplied cinematic hero artwork and legacy photographs.
 5. If on-site accounts, payments, or tickets are needed, connect an approved backend/payment provider. The current site links to brochure registration forms and deliberately does not simulate those services.
 

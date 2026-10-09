@@ -14,8 +14,8 @@
 - Main dates: **2–5 November 2026**; year is confirmed by multiple event pages and the PDF metadata title.
 - Pre-fest: **1 November 2026**.
 - Some online submissions close **31 October**; sports are generally marked tentative for **25 October–2 November**.
-- Pitch Perfect: page 40; Rhythm Rumble: page 57; Culture En Vogue: page 8; Words’ Worth: page 15; Muse Mania: page 72; Actify: page 64; Sparta: page 79; Escape Room: page 10.
-- Some brochure pages contain reused copy or date inconsistencies. The site avoids the second-edition text and does not reproduce the Geek-a-Byte 2025 date from an otherwise 2026 programme.
+- The overall club programmes shown on the site are **Abhivyakti** (Dance), **Sanrachna** (Art), **Euphony** (Music), **Quizophrenia** (Quiz), **Sparta** (Sports), **Couture En Vogue** (Fashion Show), **Dramatiks** (Drama), and **The Oracle of Words** (Literary Events).
+- The brochure contains naming and date discrepancies that are shown as notes on the relevant programme: Rhythm/Rhythmn Rumble, The Art Enigma/Engima, Culture/Couture En Vogue, conflicting Dumb Charades venues, the Actify/Laughathon overlap, and the Geek-a-byte 2025 print date.
 - Headliners are **“Revealing Soon!”** No depicted legacy performer is presented as booked for 2026.
 
 ## Registration
@@ -26,7 +26,7 @@ This link was extracted from the PDF. An automated request returned 401; the for
 
 The delegate pass is valid for four days, individual, non-transferable, and non-refundable. Escape Room, sports and Zumba are excluded. Individual competition fees can be separate. No price, inventory, or transaction success is invented.
 
-Category forms used in the site are also extracted from the brochure. Event modal links go to the relevant form when known, or the relevant PDF page for registration instructions.
+Dance, Art, Fashion Show, Drama, and Literary registration links are copied exactly from the supplied WhatsApp message. Music, Quiz, and Sports have no registration link in that message; their programme modals link to the full brochure instead.
 
 ## Photography
 
@@ -36,8 +36,8 @@ Campus photographs and event artwork are also extracted from the brochure. Some 
 
 ## Not supplied / not implemented as fictional content
 
-- An official email address, Instagram URL, or other social handles.
-- A live Instagram feed, drone video, animated logo video, or labelled logos for the prior two editions.
+- An official email address or live Instagram feed.
+- A drone video, animated logo video, or labelled logos for the prior two editions.
 - Confirmed headliner names, sponsors, attendance totals or an overall prize pool.
 - An official AIIMS Patna organiser/co-organiser credit; the provided brochure identifies AIIMS Kalyani.
 - Authentication, an on-site payment gateway, backend registration persistence or ticket issuing.

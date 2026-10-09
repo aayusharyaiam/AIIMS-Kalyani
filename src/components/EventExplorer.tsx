@@ -12,9 +12,41 @@ import {
   BookOpen,
   MapPin,
 } from "lucide-react";
-import { categories, events, type FestivalEvent } from "@/lib/festival";
+import {
+  categories,
+  events,
+  festival,
+  type EventProgrammeItem,
+  type FestivalEvent,
+} from "@/lib/festival";
 import { useSavedEvents } from "@/lib/planner";
 import { MediaImage, Modal, TiltCard } from "@/components/ui";
+
+function ProgrammeItem({ item }: { item: EventProgrammeItem }) {
+  const facts: Array<[string, string]> = [
+    ["Date", item.date ?? ""],
+    ["Time", item.time ?? ""],
+    ["Venue", item.venue ?? ""],
+    ["Fee", item.fee ?? ""],
+  ].filter((fact): fact is [string, string] => Boolean(fact[1]));
+
+  return (
+    <article className="programme-item">
+      <h4>{item.name}</h4>
+      {facts.length > 0 && (
+        <dl className="programme-facts">
+          {facts.map(([label, value]) => (
+            <div key={label}>
+              <dt>{label}</dt>
+              <dd>{value}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      {item.note && <p>{item.note}</p>}
+    </article>
+  );
+}
 
 export function EventCard({
   event,
@@ -99,23 +131,51 @@ export function EventDetails({
       <p className="eyebrow">{event.category} / ELYSSIA 3.0</p>
       <h2>{event.title}</h2>
       <p>{event.details}</p>
+      <section
+        className="event-programme"
+        aria-labelledby={`${event.id}-programme-title`}
+      >
+        <h3 id={`${event.id}-programme-title`}>Programme &amp; schedule</h3>
+        <div className="programme-list">
+          {event.programme.map((item) => (
+            <ProgrammeItem key={item.name} item={item} />
+          ))}
+        </div>
+      </section>
       <p className="detail-note">
-        Final timings, eligibility, entry fees, and coordinator details are in
-        the official event brochure. A shortlist is not an event registration.
+        {event.sourceNote ??
+          "The schedule above is transcribed from the supplied WhatsApp message and brochure. Check the organiser links for any last-minute changes."}
       </p>
       <div className="modal-actions">
         <a
           className="button button-primary"
-          href={
-            event.registrationUrl ??
-            `/elyssia-brochure.pdf#page=${event.brochurePage}`
-          }
+          href={event.registrationUrl ?? festival.brochure}
           target="_blank"
           rel="noreferrer"
         >
-          {event.registrationUrl ? "Registration form" : "Rules & registration"}
+          {event.registrationUrl ? "Registration form" : "Open brochure"}
           <ArrowUpRight size={16} />
         </a>
+        {event.registrationUrl && (
+          <a
+            className="button button-outline"
+            href={festival.brochure}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Full brochure <BookOpen size={16} />
+          </a>
+        )}
+        {event.instagramUrl && (
+          <a
+            className="button button-outline"
+            href={event.instagramUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram updates <ArrowUpRight size={16} />
+          </a>
+        )}
         <button
           type="button"
           className="button button-outline"
@@ -150,11 +210,25 @@ export function EventExplorer({ featured = false }: { featured?: boolean }) {
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<FestivalEvent | null>(null);
   const filtered = events.filter(
-    (event) =>
-      (category === "All experiences" || event.category === category) &&
-      `${event.title} ${event.description} ${event.club}`
-        .toLowerCase()
-        .includes(query.trim().toLowerCase()),
+    (event) => {
+      const programmeText = event.programme
+        .flatMap((item) => [
+          item.name,
+          item.date,
+          item.time,
+          item.venue,
+          item.fee,
+          item.note,
+        ])
+        .filter(Boolean)
+        .join(" ");
+      return (
+        (category === "All experiences" || event.category === category) &&
+        `${event.title} ${event.description} ${event.club} ${event.details} ${programmeText}`
+          .toLowerCase()
+          .includes(query.trim().toLowerCase())
+      );
+    },
   );
   const visible = featured ? filtered.slice(0, 3) : filtered;
   return (
