@@ -11,7 +11,7 @@ import {
   type RefObject,
 } from "react";
 import { ImageOff, X } from "lucide-react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView, useReducedMotion } from "framer-motion";
 
 type RevealOptions = {
   delay?: number;
@@ -180,22 +180,25 @@ export function SplitText({
   className = "",
   by = "char",
   delay = 0,
+  animateOnLoad = false,
 }: {
   text: string;
   className?: string;
   by?: "char" | "word";
   delay?: number;
+  animateOnLoad?: boolean;
 }) {
   const items = by === "word" ? text.split(" ") : Array.from(text);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
   const controls = useAnimation();
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
-    if (isInView) {
+    if (animateOnLoad || isInView) {
       controls.start("visible");
     }
-  }, [isInView, controls]);
+  }, [animateOnLoad, isInView, controls]);
 
   return (
     <motion.span 
@@ -219,14 +222,24 @@ export function SplitText({
           <motion.span
             className="split-item"
             key={`${item}-${index}`}
-            style={{ display: "inline-block" }}
+            style={
+              {
+                display: "inline-block",
+                "--split-index": index,
+              } as CSSProperties
+            }
             variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { 
-                opacity: 1, 
-                y: 0, 
-                transition: { type: "spring", stiffness: 300, damping: 24 }
-              }
+              hidden: {
+                opacity: 0,
+                y: 20,
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: prefersReducedMotion
+                  ? { duration: 0 }
+                  : { type: "spring", stiffness: 300, damping: 24 },
+              },
             }}
           >
             {item === " " ? "\u00a0" : item}

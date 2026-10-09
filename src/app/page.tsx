@@ -55,11 +55,16 @@ export default function Home() {
               AIIMS KALYANI PRESENTS <strong>THE THIRD CHAPTER</strong>
             </div>
             <h1 id="hero-title">
-              <SplitText text="ELYSSIA" />
+              <SplitText text="ELYSSIA" animateOnLoad />
               <span className="hero-edition">3.0</span>
             </h1>
             <p className="hero-subtitle">
-              <SplitText text="YOUR ODYSSEY AWAITS." by="word" />
+              <SplitText
+                text="YOUR ODYSSEY AWAITS."
+                by="word"
+                animateOnLoad
+                delay={0.18}
+              />
             </p>
             <div className="hero-rule" />
             <div className="hero-meta">
