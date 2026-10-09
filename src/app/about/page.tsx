@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, Compass, Heart, Sparkles, BookOpen } from "lucide-react";
+import {
+  ArrowUpRight,
+  Compass,
+  Heart,
+  Sparkles,
+  BookOpen,
+  Download,
+} from "lucide-react";
 import { PageTitle } from "@/components/PageTitle";
 import { MediaImage, Reveal } from "@/components/ui";
+import { festival } from "@/lib/festival";
 export const metadata: Metadata = {
   title: "Our story",
   description:
@@ -124,14 +132,23 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <a
-              href="/elyssia-brochure.pdf"
-              className="button button-outline"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open brochure <ArrowUpRight size={16} />
-            </a>
+            <div className="brochure-actions">
+              <a
+                href={festival.brochure}
+                className="button button-outline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View official brochure <ArrowUpRight size={16} />
+              </a>
+              <a
+                href={festival.brochure}
+                download="Elyssia-2026-Brochure.pdf"
+                className="button button-primary"
+              >
+                Download brochure <Download size={16} />
+              </a>
+            </div>
           </div>
         </div>
       </section>

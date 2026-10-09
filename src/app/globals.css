@@ -1332,6 +1332,13 @@ html[data-motion="paused"] *:after {
 .brochure-callout .button {
   white-space: nowrap;
 }
+.brochure-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .countdown-section {
   padding-block: 55px;
   border-top: 1px solid var(--line);
@@ -2747,6 +2754,9 @@ html[data-motion="paused"] *:after {
   }
   .brochure-callout .button {
     font-size: 10px;
+  }
+  .brochure-actions {
+    justify-content: flex-start;
   }
   .countdown-section {
     padding-block: 36px;

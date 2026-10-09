@@ -322,13 +322,23 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <a
-            href={festival.brochure}
-            download="Elyssia-2026-Brochure.pdf"
-            className="button button-outline"
-          >
-            Download brochure <Download size={16} />
-          </a>
+          <div className="brochure-actions">
+            <a
+              href={festival.brochure}
+              className="button button-outline"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View official brochure <ArrowUpRight size={16} />
+            </a>
+            <a
+              href={festival.brochure}
+              download="Elyssia-2026-Brochure.pdf"
+              className="button button-primary"
+            >
+              Download brochure <Download size={16} />
+            </a>
+          </div>
         </Reveal>
       </section>
       <Countdown />

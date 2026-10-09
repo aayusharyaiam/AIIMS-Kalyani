@@ -10,6 +10,7 @@ import {
   Search,
   Compass,
   BookOpen,
+  Download,
   MapPin,
 } from "lucide-react";
 import {
@@ -314,14 +315,23 @@ export function EventExplorer({ featured = false }: { featured?: boolean }) {
               </p>
             </div>
           </div>
-          <a
-            className="button button-outline"
-            href="/elyssia-brochure.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Full event brochure <ArrowUpRight size={16} />
-          </a>
+          <div className="brochure-actions">
+            <a
+              className="button button-outline"
+              href={festival.brochure}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View official brochure <ArrowUpRight size={16} />
+            </a>
+            <a
+              className="button button-primary"
+              href={festival.brochure}
+              download="Elyssia-2026-Brochure.pdf"
+            >
+              Download brochure <Download size={16} />
+            </a>
+          </div>
         </div>
       )}
       {selected && (

@@ -158,6 +158,22 @@ test("SEO metadata and discovery routes are available", async ({ page, request }
     "href",
     "/manifest.webmanifest",
   );
+  await expect(
+    page.getByRole("link", { name: "View official brochure" }),
+  ).toHaveAttribute("href", "/elyssia-brochure.pdf");
+  await expect(
+    page.getByRole("link", { name: "Download brochure" }),
+  ).toHaveAttribute("download", "Elyssia-2026-Brochure.pdf");
+
+  for (const route of ["/about", "/events"]) {
+    await page.goto(route);
+    await expect(
+      page.getByRole("link", { name: "View official brochure" }),
+    ).toHaveAttribute("href", "/elyssia-brochure.pdf");
+    await expect(
+      page.getByRole("link", { name: "Download brochure" }),
+    ).toHaveAttribute("download", "Elyssia-2026-Brochure.pdf");
+  }
 
   for (const route of ["/robots.txt", "/sitemap.xml"]) {
     const response = await request.get(route);
