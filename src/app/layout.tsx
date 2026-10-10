@@ -22,17 +22,69 @@ const body = localFont({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const festivalStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "Elyssia 3.0",
+  description:
+    "Elyssia 3.0 is the annual socio-cultural festival of AIIMS Kalyani, with dance, art, music, quizzes, sports, fashion, drama, literary events, and live nights.",
+  startDate: "2026-11-02T00:00:00+05:30",
+  endDate: "2026-11-05T23:59:59+05:30",
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  url: siteUrl,
+  image: `${siteUrl}/images/hero-trojan.webp`,
+  location: {
+    "@type": "Place",
+    name: "AIIMS Kalyani",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "NH-34 Connector, Basantapur, Saguna",
+      addressLocality: "Kalyani",
+      addressRegion: "West Bengal",
+      postalCode: "741245",
+      addressCountry: "IN",
+    },
+  },
+  organizer: {
+    "@type": "Organization",
+    name: "AIIMS Kalyani",
+    url: "https://aiimskalyani.edu.in/",
+  },
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Elyssia 3.0 — The Odyssey | AIIMS Kalyani",
     template: "%s | Elyssia 3.0",
   },
   description:
     "Your next great story starts here. Explore Elyssia 3.0, the annual socio-cultural festival of AIIMS Kalyani. Culture, creativity, competition, and unforgettable nights.",
+  keywords: [
+    "Elyssia 3.0",
+    "AIIMS Kalyani fest",
+    "AIIMS Kalyani cultural festival",
+    "Kalyani events 2026",
+    "Elyssia 2026",
+  ],
   applicationName: "Elyssia 3.0",
+  authors: [{ name: "AIIMS Kalyani" }],
+  creator: "AIIMS Kalyani",
+  publisher: "AIIMS Kalyani",
+  category: "festival",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: { icon: "/icon.svg", apple: "/apple-touch-icon.png" },
   openGraph: {
     title: "Elyssia 3.0 — The Odyssey",
@@ -48,6 +100,15 @@ export const metadata: Metadata = {
     ],
     type: "website",
     locale: "en_IN",
+    siteName: "Elyssia 3.0 — AIIMS Kalyani",
+    url: siteUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Elyssia 3.0 — The Odyssey",
+    description:
+      "Explore the 2–5 November 2026 socio-cultural festival of AIIMS Kalyani.",
+    images: ["/images/hero-trojan.webp"],
   },
 };
 export const viewport: Viewport = {
@@ -71,6 +132,12 @@ export default function RootLayout({
         <noscript>
           <style>{".image-skeleton{display:none!important}"}</style>
         </noscript>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(festivalStructuredData),
+          }}
+        />
         <SiteHeader />
         {children}
         <SiteFooter />

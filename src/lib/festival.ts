@@ -1,4 +1,5 @@
-// Editorial facts and links transcribed from Refs/Brochure Elyssia.pdf.
+// The WhatsApp message supplies the overall club names and exact social/form
+// links. The attached brochure supplies the programme, dates, venues, and fees.
 // The countdown marks the calendar date, not an announced opening ceremony time.
 export const festival = {
   name: "Elyssia 3.0",
@@ -12,6 +13,15 @@ export const festival = {
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=AIIMS+Kalyani",
 };
 
+export type EventProgrammeItem = {
+  name: string;
+  date?: string;
+  time?: string;
+  venue?: string;
+  fee?: string;
+  note?: string;
+};
+
 export type FestivalEvent = {
   id: string;
   title: string;
@@ -21,129 +31,403 @@ export type FestivalEvent = {
   imageAlt: string;
   description: string;
   details: string;
+  programme: EventProgrammeItem[];
   registrationUrl?: string;
-  brochurePage: number;
+  instagramUrl?: string;
+  sourceNote?: string;
 };
+
 export const events: FestivalEvent[] = [
   {
-    id: "pitch-perfect",
-    title: "Pitch Perfect",
-    category: "Music",
-    club: "CADENZA · FIND YOUR VOICE",
-    image: "/images/legacy-vocal-performance.webp",
-    imageAlt: "A vocalist performing at a previous Elyssia edition",
-    description:
-      "One mic. Your moment. Make the stage your own in the solo and duet singing competition.",
-    details:
-      "Pitch Perfect is part of Cadenza, Elyssia’s music programme. Explore the solo and duet formats, eligibility, registration fees, and performance rules in the official brochure. Listed for 5 November, 3–5 PM, in the auditorium.",
-    brochurePage: 40,
-  },
-  {
-    id: "rhythm-rumble",
-    title: "Rhythm Rumble",
+    id: "abhivyakti",
+    title: "Abhivyakti",
     category: "Dance",
-    club: "NRITYAVISHKAR · OWN THE FLOOR",
+    club: "01 / DANCE",
     image: "/images/legacy-classical-dance.webp",
-    imageAlt: "A traditional dance group at a previous Elyssia edition",
+    imageAlt: "Archive dance image used for Abhivyakti until club artwork is supplied",
     description:
-      "Two dancers. One rhythm. Let your chemistry and movement do the talking.",
+      "Solo, duet, group, battle, and workshop formats for every kind of dancer.",
     details:
-      "Rhythm Rumble features in Nrityavishkar’s dance programme. Check the brochure for the duet format, music submission guidance, and fees. Listed for 3 November, 2–5 PM, on the auditorium stage.",
+      "Abhivyakti is the overall dance programme. The WhatsApp message lists five competitions, while the brochure also includes a Zumba Workshop.",
+    programme: [
+      {
+        name: "Shringar — Solo Classical Dance",
+        date: "1 November 2026",
+        time: "2:00–5:00 PM",
+        venue: "Auditorium Stage",
+        fee: "₹99",
+      },
+      {
+        name: "Groove — Solo Western Dance",
+        date: "1 November 2026",
+        time: "2:00–5:00 PM",
+        venue: "Auditorium Stage",
+        fee: "₹99",
+      },
+      {
+        name: "Rhythm Rumble — Duet Dance",
+        date: "3 November 2026",
+        time: "2:00–5:00 PM",
+        venue: "Auditorium Stage",
+        fee: "₹149",
+        note: "The WhatsApp message spells this as “Rhythmn Rumble”; the brochure uses “Rhythm Rumble”.",
+      },
+      {
+        name: "Symphony — Group Dance Competition",
+        date: "3 November 2026",
+        time: "2:00–5:00 PM",
+        venue: "Auditorium Stage",
+        fee: "₹399",
+      },
+      {
+        name: "Adaptune — Dance Battle",
+        date: "4 November 2026",
+        time: "3:00–5:00 PM",
+        venue: "Auditorium Ground Floor / In front of Auditorium",
+        fee: "₹75",
+      },
+      {
+        name: "Zumba Workshop",
+        date: "1 November 2026",
+        time: "8:00–10:00 AM",
+        venue: "Auditorium 2nd Floor",
+        fee: "₹69",
+        note: "Additional brochure listing; not included in the WhatsApp event list.",
+      },
+    ],
     registrationUrl: "https://forms.gle/UpikuHyLYhuSFLJm9",
-    brochurePage: 57,
+    instagramUrl:
+      "https://instagram.com/nritya__avishkar.aiimsk?obrf=c216bG1kNGR3aTdv",
   },
   {
-    id: "culture-en-vogue",
-    title: "Culture En Vogue",
-    category: "Flagship",
-    club: "THE RUNWAY · MAKE A STATEMENT",
-    image: "/images/legacy-dance-performance.webp",
-    imageAlt:
-      "Costumed stage performers photographed at a previous Elyssia edition",
-    description:
-      "Culture meets couture. Bring your creative vision to Elyssia’s fashion showcase.",
-    details:
-      "Culture En Vogue is the festival’s fashion show. Read the official brochure for participation guidelines, team composition, fees, and registration instructions. This card uses legacy festival imagery, not a photograph of the upcoming show. Listed for 5 November from 5:30 PM, at the concert stage.",
-    brochurePage: 8,
-  },
-  {
-    id: "words-worth",
-    title: "Words’ Worth",
-    category: "Literary & art",
-    club: "A-LIT-REASURE · WORDS COME ALIVE",
-    image: "/images/legacy-festival-friends.webp",
-    imageAlt:
-      "Elyssia participants celebrating together in a legacy festival photograph",
-    description:
-      "For the storytellers, the wordsmiths, and everyone with something worth saying.",
-    details:
-      "Words’ Worth is the English poem-writing competition in the A-Lit-reasure literary programme. It accepts online submissions. Refer to page 15 of the brochure for the deadline, entry rules, and submission method.",
-    brochurePage: 15,
-  },
-  {
-    id: "muse-mania",
-    title: "Muse Mania",
-    category: "Literary & art",
-    club: "KALAKRITI · CREATE SOMETHING REAL",
+    id: "sanrachna",
+    title: "Sanrachna",
+    category: "Art",
+    club: "02 / ART",
     image: "/images/legacy-live-art.webp",
-    imageAlt: "An artist drawing during a previous festival activity",
+    imageAlt: "Archive art image used for Sanrachna until club artwork is supplied",
     description:
-      "A little imagination. A blank canvas. A chance to leave your mark.",
+      "Complete, model, solve, and scribble your way through four art challenges.",
     details:
-      "Muse Mania is an online sketching contest in Kalakriti’s Sanrachna art programme. Read the event-specific rules for materials, theme, format, submission deadlines, and fees before using the art registration form.",
+      "Sanrachna is the overall art programme. The brochure calls The Missing Piece a “Complete me art challenge” and spells The Art Enigma with an “n”.",
+    programme: [
+      {
+        name: "The Missing Piece — Complete Me Art Challenge",
+        date: "2 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Auditorium Ground Floor",
+        fee: "₹70 per person",
+      },
+      {
+        name: "Chisel n' Chill — Clay Modelling Contest",
+        date: "3 November 2026",
+        time: "10:00 AM–1:00 PM",
+        venue: "Auditorium Ground Floor",
+        fee: "₹70 per person",
+      },
+      {
+        name: "The Art Enigma — Mystery Art Challenge",
+        date: "4 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Auditorium Ground Floor",
+        fee: "₹70 per person",
+        note: "The WhatsApp message spells this as “The Art Engima”; the brochure uses “The Art Enigma”.",
+      },
+      {
+        name: "Scribbleverse — Scribbling Art Contest",
+        date: "5 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Auditorium Ground Floor",
+        fee: "₹70 per person",
+      },
+    ],
     registrationUrl: "https://forms.gle/3rgQyso4AXBMZUu26",
-    brochurePage: 72,
+    instagramUrl:
+      "https://instagram.com/kalakriti.aiimskalyani?obrf=MW1teTJvNHBjMzZuMg%3D%3D",
   },
   {
-    id: "actify",
-    title: "Actify",
-    category: "Drama",
-    club: "NATYANIDHI · STEP INTO CHARACTER",
-    image: "/images/legacy-dance-performance.webp",
-    imageAlt:
-      "A theatrical group performance from the supplied legacy photo collection",
+    id: "euphony",
+    title: "Euphony",
+    category: "Music",
+    club: "03 / MUSIC",
+    image: "/images/legacy-classical-music.webp",
+    imageAlt: "Archive music image used for Euphony until club artwork is supplied",
     description:
-      "Stories that move you. Performances that stay with you. The stage is calling.",
+      "Instrumental and vocal submissions meet solo and duet performances on stage.",
     details:
-      "Actify is part of Natyanidhi’s Dramatiks programme. The brochure contains the performance format, participation rules, fees, and schedule. The linked form is for offline drama activities. Actify is a short-drama competition, listed for 2 November, 2–5 PM, on the auditorium stage.",
-    registrationUrl: "https://forms.gle/8yoeGBetspAD8c3MA",
-    brochurePage: 64,
+      "Euphony is the overall music programme. The WhatsApp message does not include a registration link; use the official brochure for the event rules and any form instructions.",
+    programme: [
+      {
+        name: "Euphony (Instrumental)",
+        date: "Submission deadline: 31 October 2026",
+        time: "Online submission",
+        venue: "Online",
+        fee: "₹30",
+      },
+      {
+        name: "Euphony (Singing)",
+        date: "Submission deadline: 31 October 2026",
+        time: "Online submission",
+        venue: "Online",
+        fee: "₹30",
+      },
+      {
+        name: "Chord Chronicles — Solo Instrumental",
+        date: "4 November 2026",
+        time: "12:30–2:00 PM",
+        venue: "Auditorium",
+        fee: "₹60",
+      },
+      {
+        name: "Pitch Perfect — Solo & Duet Singing",
+        date: "5 November 2026",
+        time: "3:00–5:00 PM",
+        venue: "Auditorium",
+        fee: "₹60",
+      },
+    ],
+  },
+  {
+    id: "quizophrenia",
+    title: "Quizophrenia",
+    category: "Quiz",
+    club: "04 / QUIZ",
+    image: "/images/quizophrenia.webp",
+    imageAlt: "The AIIMS Kalyani campus used for Quizophrenia until club artwork is supplied",
+    description:
+      "Five quiz formats, from observation and movies to a general open quiz.",
+    details:
+      "Quizophrenia is the overall quiz programme. Participants should come in teams of three or fewer. The WhatsApp message does not include a registration link; use the brochure for rules and registration instructions.",
+    programme: [
+      {
+        name: "Blink-and-We Quizzed It! — Art of Noticing Quiz",
+        date: "1 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Academic Block LT",
+        fee: "₹120 per team",
+      },
+      {
+        name: "Jack of All Trades",
+        date: "2 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Academic Block LT",
+        fee: "₹120 per team",
+      },
+      {
+        name: "Cast and Curious — Movies Quiz",
+        date: "3 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Academic Block LT",
+        fee: "₹120 per team",
+      },
+      {
+        name: "To Quiz a Mockingbird — U-25 M.E.L.A.S Quiz",
+        date: "4 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Academic Block LT",
+        fee: "₹120 per team",
+      },
+      {
+        name: "Quiz Me If You Can 3.0 — General Open Quiz",
+        date: "5 November 2026",
+        time: "11:00 AM–1:00 PM",
+        venue: "Audi Stage",
+        fee: "₹120 per team",
+      },
+    ],
   },
   {
     id: "sparta",
     title: "Sparta",
     category: "Sports",
-    club: "DYNAMOS · RISE TO THE CHALLENGE",
-    image: "/images/aiims-kalyani-campus.webp",
-    imageAlt: "The AIIMS Kalyani campus, host of the festival",
+    club: "05 / SPORTS",
+    image: "/images/sparta.webp",
+    imageAlt: "The AIIMS Kalyani campus used for Sparta until club artwork is supplied",
     description:
-      "Bring your team spirit to the courts and fields. This is where competitors become a community.",
+      "Bring your team to badminton, volleyball, football, cricket, and more.",
     details:
-      "Sparta includes badminton, volleyball, football, cricket, table tennis, throwball, and a marathon. Sports dates are tentatively 25 October–2 November; check with the relevant coordinator. Sports registration is not included in the delegate pass.",
-    brochurePage: 79,
+      "Sparta is the overall sports programme. Tournament dates are tentative and sports registration is separate from the delegate pass. Confirm sport-specific rules, venues, fees, and dates with the organisers.",
+    programme: [
+      {
+        name: "Badminton · Volleyball · Football · Cricket · Table Tennis · Throwball · Marathon",
+        date: "Tentative tournament window: 25 October–2 November 2026",
+        venue: "See the sport-specific brochure pages",
+        fee: "See brochure",
+        note: "The brochure provides sport-specific venues, fees, rules, and any different dates. Check the latest organiser update before travelling.",
+      },
+    ],
   },
   {
-    id: "escape-room",
-    title: "Escape Room",
-    category: "Flagship",
-    club: "THE CHALLENGE · THINK YOUR WAY OUT",
-    image: "/images/elyssia-odyssey-background.webp",
-    imageAlt: "Nautical and classical artwork from the Elyssia brochure",
+    id: "couture-en-vogue",
+    title: "Couture En Vogue",
+    category: "Fashion",
+    club: "06 / FASHION SHOW",
+    image: "/images/couture-en-vogue.webp",
+    imageAlt:
+      "Archive stage image used for Couture En Vogue until club artwork is supplied",
     description:
-      "Follow the clues, trust your team, and see what waits on the other side.",
+      "A fashion showcase where creative vision takes the stage.",
     details:
-      "Escape Room is a separately registered activity and is excluded from the delegate pass. The programme begins during pre-fest on 1 November. Consult the brochure for team size, fees, slots, and registration details.",
-    brochurePage: 10,
+      "Couture En Vogue is the overall fashion show. The supplied WhatsApp message provides the registration and Instagram links below.",
+    programme: [
+      {
+        name: "Couture En Vogue",
+        date: "5 November 2026",
+        time: "5:30 PM onwards",
+        venue: "Concert Stage",
+        note: "Brochure contacts: Avanie (+91 89998 92441), Puspita (+91 96357 80273).",
+      },
+    ],
+    registrationUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfDYcD7cWjK9FOlAUctYSUI1aalb04FjJTwUpZE3ygp7xXy4w/viewform?usp=send_form",
+    instagramUrl:
+      "https://instagram.com/natya_nidhi.aiimsk?xtok=MWVzbGp2ZWRudm9jZA%3D%3D",
+    sourceNote:
+      "The WhatsApp message calls the event “Couture En Vogue”; the brochure title on page 8 reads “Culture En Vogue”.",
+  },
+  {
+    id: "dramatiks",
+    title: "Dramatiks",
+    category: "Drama",
+    club: "07 / DRAMA",
+    image: "/images/dramatiks.webp",
+    imageAlt: "Archive stage image used for Dramatiks until club artwork is supplied",
+    description:
+      "Short drama, dumb charades, and stand-up bring three kinds of theatre to life.",
+    details:
+      "Dramatiks is the overall drama programme. Its registration and Instagram links are the same as the Couture En Vogue links supplied in the WhatsApp message.",
+    programme: [
+      {
+        name: "Actify — Short Drama Competition",
+        date: "2 November 2026",
+        time: "2:00–5:00 PM",
+        venue: "Auditorium Stage",
+        fee: "₹149",
+      },
+      {
+        name: "Guess-da-guise — Dumb Charades",
+        date: "2 November 2026",
+        time: "11:00 AM–12:30 PM",
+        venue: "Auditorium Stage / Lecture Theatre",
+        fee: "₹99",
+        note: "The brochure gives both venues on the same entry; confirm the venue with the organisers.",
+      },
+      {
+        name: "Laughathon — Stand-up",
+        date: "2 November 2026",
+        time: "2:00–5:00 PM",
+        venue: "Auditorium Stage",
+        fee: "₹49",
+      },
+    ],
+    registrationUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfDYcD7cWjK9FOlAUctYSUI1aalb04FjJTwUpZE3ygp7xXy4w/viewform?usp=send_form",
+    instagramUrl:
+      "https://instagram.com/natya_nidhi.aiimsk?xtok=MWVzbGp2ZWRudm9jZA%3D%3D",
+    sourceNote:
+      "Actify and Laughathon are both listed for 2 November, 2:00–5:00 PM. Confirm the schedule if attending both.",
+  },
+  {
+    id: "oracle-of-words",
+    title: "The Oracle of Words",
+    category: "Literary",
+    club: "08 / LITERARY EVENTS",
+    image: "/images/oracle-of-words.webp",
+    imageAlt:
+      "Archive festival image used for The Oracle of Words until club artwork is supplied",
+    description:
+      "Writing, debate, games, quizzes, performance, and a movie screening for word people.",
+    details:
+      "The Oracle of Words is the overall literary programme. The WhatsApp message lists the offline events below and includes the offline-events form and Instagram link.",
+    programme: [
+      {
+        name: "Escape Room",
+        date: "1 November 2026, then 2–5 November 2026",
+        time: "1 Nov: 3:00 PM onwards; 2–5 Nov: 10:00 AM–5:00 PM",
+        venue: "Auditorium 1st Floor",
+        fee: "₹50 per person",
+      },
+      {
+        name: "Scriborium — Writing Contest",
+        date: "1 November 2026",
+        time: "10:00 AM–12:30 PM",
+        venue: "LT Ground Floor, Academic Block-11",
+        fee: "₹20 per person",
+      },
+      {
+        name: "Pictionary",
+        date: "2 November 2026",
+        time: "9:00 AM–12:00 PM",
+        venue: "LT Ground Floor, Academic Block-11",
+        fee: "₹20 per person",
+      },
+      {
+        name: "The Movie Verdict — Movie Review and Discussion",
+        date: "2 November 2026",
+        time: "10:00 AM–12:00 PM",
+        venue: "Yamuna Hall (Yatri Hall)",
+        fee: "₹20 per person",
+      },
+      {
+        name: "Lokmanthan — Parliamentary Debate",
+        date: "3 November 2026",
+        time: "9:00 AM–1:00 PM",
+        venue: "Auditorium Main Stage",
+        fee: "₹40 per person",
+      },
+      {
+        name: "Devil's Advocate",
+        date: "4 November 2026",
+        time: "9:00 AM–12:30 PM",
+        venue: "Auditorium Main Stage",
+        fee: "₹40 per person",
+      },
+      {
+        name: "Geek-a-byte — The Literary Gameshow",
+        date: "4 November 2026",
+        time: "2:00–5:00 PM",
+        venue: "LT Ground Floor, Academic Block-11",
+        fee: "₹20 per person",
+        note: "The brochure appears to print “4th November 2025”; the surrounding programme is for 2026, so confirm this date with the organisers.",
+      },
+      {
+        name: "The Projection Room — Movie Screening",
+        date: "1 November 2026",
+        time: "6:00–9:00 PM",
+        venue: "Auditorium Hall",
+      },
+      {
+        name: "AI Fiesta — AI Based Contest",
+        date: "5 November 2026",
+        time: "10:00 AM–12:30 PM",
+        venue: "LT Ground Floor, Academic Block-11",
+        fee: "₹20 per person",
+      },
+      {
+        name: "Just-A-Minute (JAM)",
+        date: "5 November 2026",
+        time: "2:00–4:00 PM",
+        venue: "LT Ground Floor, Academic Block-11",
+        fee: "₹20 per person",
+      },
+    ],
+    registrationUrl:
+      "https://docs.google.com/forms/d/1U6d4AetqVJ6U_8i_bi7eSYgcOBYiuKymTALuS7raePc/edit",
+    instagramUrl:
+      "https://instagram.com/alitreasure.aiimsk?vrfl=MTFlZHVwaGV1dTZ3Zg%3D%3D",
   },
 ];
+
 export const categories = [
   "All experiences",
-  "Music",
   "Dance",
-  "Flagship",
-  "Literary & art",
-  "Drama",
+  "Art",
+  "Music",
+  "Quiz",
   "Sports",
+  "Fashion",
+  "Drama",
+  "Literary",
 ];
 export const gallery = [
   {

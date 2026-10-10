@@ -1,7 +1,21 @@
 import type { Metadata } from "next";
 import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 import { PageTitle } from "@/components/PageTitle";
-import { festival } from "@/lib/festival";
+import { events, festival } from "@/lib/festival";
+
+const instagramUpdates = events.reduce<Array<{ title: string; url: string }>>(
+  (links, event) => {
+    if (
+      event.instagramUrl &&
+      !links.some((link) => link.url === event.instagramUrl)
+    ) {
+      links.push({ title: event.title, url: event.instagramUrl });
+    }
+    return links;
+  },
+  [],
+);
+
 export const metadata: Metadata = {
   title: "Contact & getting here",
   description:
@@ -62,6 +76,25 @@ export default function ContactPage() {
               +91 79809 95576
             </a>
           </div>
+          <div className="contact-card">
+            <p className="eyebrow">04 / CLUB UPDATES</p>
+            <h3>FOLLOW THE PROGRAMMES.</h3>
+            <p>
+              Follow the Instagram channels supplied by the organising team for
+              club-specific updates.
+            </p>
+            {instagramUpdates.map((link) => (
+              <a
+                className="contact-link"
+                href={link.url}
+                key={link.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {link.title} on Instagram <ArrowUpRight size={14} />
+              </a>
+            ))}
+          </div>
         </div>
         <div>
           <div className="map-card">
@@ -89,12 +122,12 @@ export default function ContactPage() {
             timings in the brochure.
           </p>
           <p className="contact-note">
-            <strong>Follow the right updates</strong>
+            <strong>Event links</strong>
             <br />
-            Official social handles, a contact email, and an Instagram feed are
-            not included in the supplied materials yet. The organising team can
-            confirm the current channels. We won’t direct you to an unverified
-            account.
+            Registration links and Instagram channels shown on this site are
+            copied from the WhatsApp message supplied by the organising team.
+            Music, quiz, and sports do not have a registration link in that
+            message; use the brochure for their instructions.
           </p>
         </div>
       </section>

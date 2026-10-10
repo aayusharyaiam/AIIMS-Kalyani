@@ -29,7 +29,7 @@ Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_SITE_URL` to the deploy
 | `/events`    | Searchable, filterable event selection, event-detail dialogs, bookmarks, registration links       |
 | `/gallery`   | Authentic legacy photographs, category filters, keyboard-accessible lightbox                      |
 | `/contact`   | Verified brochure contacts, accommodation information, directions                                 |
-| `/login`     | Local festival-planner setup; retained route, **not an authentication service**                   |
+| `/login`     | Local festival-planner setup; no account or login is required                              |
 | `/dashboard` | Saved shortlist, downloadable text plan, clear-data control                                       |
 
 All pages share navigation, a responsive mobile menu, branded browser titles, and the footer. Secondary pages have matching visible title bars. Loading UI includes App Router skeletons and image-loading placeholders; loading does not impose an artificial delay. Error and missing-page states are also styled.
@@ -40,13 +40,14 @@ All pages share navigation, a responsive mobile menu, branded browser titles, an
 - Reduced-motion support and an explicit pause-motion control in the footer.
 - Native modal dialogs with Escape handling, focus containment, restored focus, and background scroll locking.
 - Event filters/search, persistent bookmarks, native FAQ disclosures, gallery navigation, and form validation.
-- The planner saves **only a name, college, and selected event IDs in the current browser's localStorage**. It sends no personal information to a server. Storage errors and corrupted saved data are handled. Visitors can remove all planner data.
+- Registration uses the official Google Forms linked from the homepage and each programme card; the planner is not a registration, ticket, or payment system.
+- The `/login` route is retained as a local visit-planner setup screen. It does not authenticate users, create accounts, or require Firebase. The planner saves **only a name, college, and selected event IDs in the current browser's localStorage**. It sends no personal information to a server. Storage errors and corrupted saved data are handled. Visitors can remove all planner data.
 - No invented QR tickets, registration confirmations, payment success states, or availability counts.
 - Self-hosted fonts and optimised local WebP images; no external image or font service is required at runtime.
 
 ## Editing content
 
-- `src/lib/festival.ts`: verified dates, registration links, event descriptions, brochure page references, gallery captions, FAQs.
+- `src/lib/festival.ts`: verified dates, overall club programmes, WhatsApp registration/Instagram links, brochure schedules, gallery captions, and FAQs.
 - `src/app/page.tsx`: home-page composition and hero content.
 - `src/app/globals.css`: design tokens, responsive layouts, loading states, and animations.
 - `src/components/`: shared navigation, event discovery, gallery, planner, countdown, and UI primitives.
@@ -76,11 +77,11 @@ You can also set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to another Chrome/Chromiu
 
 ## Before public launch
 
-1. Confirm the delegate and category Google Forms are open. They are authentic links from the brochure, but acceptance of registrations is controlled by their owners.
+1. Confirm the delegate and category Google Forms are open. The delegate form comes from the brochure; the club forms and Instagram links are reproduced from the organising team’s WhatsApp message, and acceptance of registrations is controlled by the form owners. No website account is needed to register.
 2. Confirm organiser attribution: the supplied brochure identifies **AIIMS Kalyani**; an AIIMS Patna co-organiser credit was not present in the supplied references.
-3. Supply official social handles/email, approved 2026 headliner announcements, and any drone footage or logo animation. No unverified accounts or substitute artist announcements are used.
+3. Supply an official email, approved 2026 headliner announcements, and any drone footage or logo animation. The club Instagram links currently shown are the links supplied by the organising team.
 4. Confirm permission to publicly use the supplied cinematic hero artwork and legacy photographs.
-5. If on-site accounts, payments, or tickets are needed, connect an approved backend/payment provider. The current site links to brochure registration forms and deliberately does not simulate those services.
+5. If on-site accounts, payments, or tickets are needed in the future, connect an approved backend/payment provider. The current site links to Google Forms and deliberately does not simulate those services.
 
 ## Stack
 

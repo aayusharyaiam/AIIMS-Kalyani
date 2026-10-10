@@ -41,12 +41,9 @@ test("all pages have titles, accessible landmarks, and no horizontal overflow", 
 
 test("the reference hero loads and FAQs expand", async ({ page }, testInfo) => {
   await page.goto("/");
-  const image = page.locator(".hero-art img");
-  await expect(image).toBeVisible();
-  await expect(image).toHaveAttribute("src", /hero-trojan/);
-  await expect
-    .poll(() => image.evaluate((img) => (img as HTMLImageElement).naturalWidth))
-    .toBeGreaterThan(0);
+  const heroVideo = page.locator(".hero-art video");
+  await expect(heroVideo).toBeVisible();
+  await expect(heroVideo).toHaveAttribute("poster", /hero-trojan/);
   await page.screenshot({
     path: testInfo.outputPath("landing.png"),
     fullPage: true,
@@ -63,13 +60,26 @@ test("the reference hero loads and FAQs expand", async ({ page }, testInfo) => {
   );
 });
 
+test("hero text animates on first load and scroll progress is mounted", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "no-preference" });
+  await page.goto("/");
+  await expect(page.locator(".hero h1 .split-item")).toHaveCount(7);
+  await expect(page.locator(".hero h1 .split-item").first()).toHaveCSS(
+    "animation-name",
+    "text-reveal",
+  );
+  await expect(page.locator(".scroll-progress")).toBeAttached();
+});
+
 test("event filtering, search, modal, and focus restoration work", async ({
   page,
 }) => {
   await page.goto("/events");
   await page.getByRole("button", { name: "Music", exact: true }).click();
   await expect(page.locator(".event-card")).toHaveCount(1);
-  await expect(page.locator(".event-card h3")).toHaveText("Pitch Perfect");
+  await expect(page.locator(".event-card h3")).toHaveText("Euphony");
   const trigger = page.getByRole("button", {
     name: "Explore event",
     exact: true,
@@ -78,11 +88,11 @@ test("event filtering, search, modal, and focus restoration work", async ({
   const dialog = page.getByRole("dialog");
   await expect(dialog).toBeVisible();
   await expect(
-    dialog.getByRole("heading", { name: "Pitch Perfect" }),
+    dialog.getByRole("heading", { name: "Euphony", exact: true }),
   ).toBeVisible();
   await expect(
-    dialog.getByRole("link", { name: "Rules & registration" }),
-  ).toHaveAttribute("href", "/elyssia-brochure.pdf#page=40");
+    dialog.getByRole("link", { name: "Open brochure" }),
+  ).toHaveAttribute("href", "/elyssia-brochure.pdf");
   await page.keyboard.press("Escape");
   await expect(dialog).toHaveCount(0);
   await expect(trigger).toBeFocused();
@@ -92,25 +102,104 @@ test("event filtering, search, modal, and focus restoration work", async ({
   await expect(page.locator(".event-card")).toHaveCount(8);
 });
 
+test("overall club programmes expose the supplied schedules and links", async ({
+  page,
+}) => {
+  await page.goto("/events");
+  const titles = await page.locator(".event-card h3").allTextContents();
+  expect(titles).toEqual([
+    "Abhivyakti",
+    "Sanrachna",
+    "Euphony",
+    "Quizophrenia",
+    "Sparta",
+    "Couture En Vogue",
+    "Dramatiks",
+    "The Oracle of Words",
+  ]);
+
+  const danceCard = page.locator(".event-card").filter({ hasText: "Abhivyakti" });
+  await danceCard.getByRole("button", { name: "Explore event" }).click();
+  const dialog = page.getByRole("dialog", { name: "Abhivyakti" });
+  await expect(dialog).toContainText("Shringar — Solo Classical Dance");
+  await expect(dialog).toContainText("Zumba Workshop");
+  await expect(
+    dialog.getByRole("link", { name: "Registration form" }),
+  ).toHaveAttribute("href", "https://forms.gle/UpikuHyLYhuSFLJm9");
+  await expect(
+    dialog.getByRole("link", { name: "Instagram updates" }),
+  ).toHaveAttribute(
+    "href",
+    "https://instagram.com/nritya__avishkar.aiimsk?obrf=c216bG1kNGR3aTdv",
+  );
+  await page.keyboard.press("Escape");
+
+  const euphonyCard = page.locator(".event-card").filter({ hasText: "Euphony" });
+  await euphonyCard.getByRole("button", { name: "Explore event" }).click();
+  const euphonyDialog = page.getByRole("dialog", { name: "Euphony" });
+  await expect(euphonyDialog).toContainText("Pitch Perfect — Solo & Duet Singing");
+  await expect(euphonyDialog.getByRole("link", { name: "Open brochure" })).toHaveAttribute(
+    "href",
+    "/elyssia-brochure.pdf",
+  );
+});
+
+test("SEO metadata and discovery routes are available", async ({ page, request }) => {
+  await page.goto("/");
+  await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+    "content",
+    /annual socio-cultural festival of AIIMS Kalyani/,
+  );
+  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
+    "content",
+    /Elyssia 3\.0/,
+  );
+  await expect(page.locator('link[rel="manifest"]')).toHaveAttribute(
+    "href",
+    "/manifest.webmanifest",
+  );
+  await expect(
+    page.getByRole("link", { name: "View official brochure" }),
+  ).toHaveAttribute("href", "/elyssia-brochure.pdf");
+  await expect(
+    page.getByRole("link", { name: "Download brochure" }),
+  ).toHaveAttribute("download", "Elyssia-2026-Brochure.pdf");
+
+  for (const route of ["/about", "/events"]) {
+    await page.goto(route);
+    await expect(
+      page.getByRole("link", { name: "View official brochure" }),
+    ).toHaveAttribute("href", "/elyssia-brochure.pdf");
+    await expect(
+      page.getByRole("link", { name: "Download brochure" }),
+    ).toHaveAttribute("download", "Elyssia-2026-Brochure.pdf");
+  }
+
+  for (const route of ["/robots.txt", "/sitemap.xml"]) {
+    const response = await request.get(route);
+    expect(response.status()).toBe(200);
+  }
+});
+
 test("bookmarks persist across navigation and reload, and plan download works", async ({
   page,
 }) => {
   await page.goto("/events");
   await page
-    .getByRole("button", { name: "Save Pitch Perfect", exact: true })
+    .getByRole("button", { name: "Save Euphony", exact: true })
     .click();
   await expect(
-    page.getByRole("button", { name: "Unsave Pitch Perfect", exact: true }),
+    page.getByRole("button", { name: "Unsave Euphony", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await page.goto("/dashboard");
-  await expect(page.locator(".event-card h3")).toHaveText("Pitch Perfect");
+  await expect(page.locator(".event-card h3")).toHaveText("Euphony");
   await page.reload();
-  await expect(page.locator(".event-card h3")).toHaveText("Pitch Perfect");
+  await expect(page.locator(".event-card h3")).toHaveText("Euphony");
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download my plan" }).click();
   expect((await download).suggestedFilename()).toBe("My-Elyssia-Plan.txt");
   await page
-    .getByRole("button", { name: "Unsave Pitch Perfect", exact: true })
+    .getByRole("button", { name: "Unsave Euphony", exact: true })
     .click();
   await expect(page.locator(".empty-state")).toBeVisible();
 });
@@ -227,23 +316,24 @@ test("image failures and unavailable browser storage have useful feedback", asyn
   page,
 }) => {
   await page.route("**/_next/image?*", (route) =>
-    route.request().url().includes("hero-trojan")
+    route.request().url().includes("legacy-live-concert")
       ? route.abort()
       : route.continue(),
   );
   await page.goto("/");
-  await expect(page.locator(".hero-art .image-fallback")).toBeVisible();
+  await expect(page.locator(".intro-image .image-fallback")).toBeVisible();
   await page.addInitScript(() => {
     Storage.prototype.setItem = () => {
       throw new Error("Storage unavailable");
     };
   });
   await page.goto("/events");
-  await page
-    .getByRole("button", { name: "Save Pitch Perfect", exact: true })
+  const euphonyCard = page.locator(".event-card").filter({ hasText: "Euphony" });
+  await euphonyCard
+    .getByRole("button", { name: "Save Euphony", exact: true })
     .click();
   await expect(
-    page.locator(".event-card").first().getByRole("alert"),
+    euphonyCard.getByRole("alert"),
   ).toContainText("could not save");
 });
 
@@ -255,13 +345,13 @@ test("image skeletons reflect real loading and motion can be paused", async ({
     releaseImage = resolve;
   });
   await page.route("**/_next/image?*", async (route) => {
-    if (route.request().url().includes("hero-trojan")) await gate;
+    if (route.request().url().includes("legacy-live-concert")) await gate;
     await route.continue();
   });
   await page.goto("/", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".hero-art .image-skeleton")).toBeVisible();
+  await expect(page.locator(".intro-image .image-skeleton")).toBeVisible();
   releaseImage();
-  await expect(page.locator(".hero-art .image-skeleton")).toHaveCount(0);
+  await expect(page.locator(".intro-image .image-skeleton")).toHaveCount(0);
   const motion = page.getByRole("button", {
     name: "Pause decorative animations",
   });
@@ -300,7 +390,7 @@ test("reduced motion and missing pages are handled", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
   const animation = await page
-    .locator(".hero-art img")
+    .locator(".hero-art video")
     .evaluate((element) => getComputedStyle(element).animationName);
   expect(animation).toBe("none");
   const response = await page.goto("/a-page-that-does-not-exist");

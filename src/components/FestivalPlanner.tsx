@@ -135,12 +135,36 @@ export function PlannerDashboard() {
       "ELYSSIA 3.0 — MY FESTIVAL PLAN",
       festival.dates,
       "AIIMS Kalyani, West Bengal",
-      "",
-      profile ? `${profile.name} · ${profile.college}` : "My shortlist",
-      "",
-      ...selectedEvents.map(
-        (event) => `${event.title} — ${event.category}\n${event.description}`,
-      ),
+       "",
+       profile ? `${profile.name} · ${profile.college}` : "My shortlist",
+       "",
+       ...selectedEvents.map(
+          (event) =>
+            [
+              `${event.title} — ${event.category}`,
+              event.description,
+              ...event.programme.map((item) =>
+                [
+                  item.name,
+                  item.date,
+                  item.time,
+                  item.venue,
+                  item.fee,
+                  item.note,
+                ]
+                  .filter(Boolean)
+                  .join(" · "),
+              ),
+              event.registrationUrl
+                ? `Registration: ${event.registrationUrl}`
+                : "Registration: See the official brochure",
+              event.instagramUrl
+                ? `Instagram: ${event.instagramUrl}`
+                : undefined,
+            ]
+              .filter(Boolean)
+              .join("\n"),
+        ),
       "",
       "This is a personal shortlist, NOT a ticket or registration.",
       `Delegate registration: ${festival.registrationUrl}`,

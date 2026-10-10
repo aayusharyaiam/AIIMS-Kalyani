@@ -55,11 +55,16 @@ export default function Home() {
               AIIMS KALYANI PRESENTS <strong>THE THIRD CHAPTER</strong>
             </div>
             <h1 id="hero-title">
-              <SplitText text="ELYSSIA" />
+              <SplitText text="ELYSSIA" animateOnLoad />
               <span className="hero-edition">3.0</span>
             </h1>
             <p className="hero-subtitle">
-              <SplitText text="YOUR ODYSSEY AWAITS." by="word" />
+              <SplitText
+                text="YOUR ODYSSEY AWAITS."
+                by="word"
+                animateOnLoad
+                delay={0.18}
+              />
             </p>
             <div className="hero-rule" />
             <div className="hero-meta">
@@ -317,13 +322,23 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <a
-            href={festival.brochure}
-            download="Elyssia-2026-Brochure.pdf"
-            className="button button-outline"
-          >
-            Download brochure <Download size={16} />
-          </a>
+          <div className="brochure-actions">
+            <a
+              href={festival.brochure}
+              className="button button-outline"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View official brochure <ArrowUpRight size={16} />
+            </a>
+            <a
+              href={festival.brochure}
+              download="Elyssia-2026-Brochure.pdf"
+              className="button button-primary"
+            >
+              Download brochure <Download size={16} />
+            </a>
+          </div>
         </Reveal>
       </section>
       <Countdown />
