@@ -192,7 +192,7 @@ export const events: FestivalEvent[] = [
     title: "Quizophrenia",
     category: "Quiz",
     club: "04 / QUIZ",
-    image: "/images/aiims-kalyani-campus.webp",
+    image: "/images/quizophrenia.webp",
     imageAlt: "The AIIMS Kalyani campus used for Quizophrenia until club artwork is supplied",
     description:
       "Five quiz formats, from observation and movies to a general open quiz.",
@@ -241,7 +241,7 @@ export const events: FestivalEvent[] = [
     title: "Sparta",
     category: "Sports",
     club: "05 / SPORTS",
-    image: "/images/aiims-kalyani-campus.webp",
+    image: "/images/sparta.webp",
     imageAlt: "The AIIMS Kalyani campus used for Sparta until club artwork is supplied",
     description:
       "Bring your team to badminton, volleyball, football, cricket, and more.",
@@ -262,7 +262,7 @@ export const events: FestivalEvent[] = [
     title: "Couture En Vogue",
     category: "Fashion",
     club: "06 / FASHION SHOW",
-    image: "/images/legacy-dance-performance.webp",
+    image: "/images/couture-en-vogue.webp",
     imageAlt:
       "Archive stage image used for Couture En Vogue until club artwork is supplied",
     description:
@@ -290,7 +290,7 @@ export const events: FestivalEvent[] = [
     title: "Dramatiks",
     category: "Drama",
     club: "07 / DRAMA",
-    image: "/images/legacy-live-concert.webp",
+    image: "/images/dramatiks.webp",
     imageAlt: "Archive stage image used for Dramatiks until club artwork is supplied",
     description:
       "Short drama, dumb charades, and stand-up bring three kinds of theatre to life.",
@@ -332,7 +332,7 @@ export const events: FestivalEvent[] = [
     title: "The Oracle of Words",
     category: "Literary",
     club: "08 / LITERARY EVENTS",
-    image: "/images/legacy-festival-friends.webp",
+    image: "/images/oracle-of-words.webp",
     imageAlt:
       "Archive festival image used for The Oracle of Words until club artwork is supplied",
     description:
