@@ -33,7 +33,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-art" aria-hidden="true">
           <video
-            src="https://res.cloudinary.com/kpa6g7an/video/upload/v1791477237/elyssia.mp4"
+            src="https://res.cloudinary.com/kpa6g7an/video/upload/v1791584692/Video-65390_1.mp4"
             poster="/images/hero-trojan.webp"
             autoPlay
             loop
