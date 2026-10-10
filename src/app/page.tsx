@@ -204,7 +204,7 @@ export default function Home() {
           </div>
           <div className="intro-image">
             <MediaImage
-              src="/images/legacy-live-concert.webp"
+              src="https://i.ibb.co/MDPZCn88/DSC01844-1.webp"
               alt="Warm stage lights and a live performance from the Elyssia archives"
             />
             <div className="image-caption">
