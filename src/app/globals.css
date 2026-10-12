@@ -1175,6 +1175,37 @@ html[data-motion="paused"] *:after {
   letter-spacing: 0.15em;
   color: #dfd6cb;
 }
+.pronite-posters-heading {
+  margin-bottom: 38px;
+}
+.pronite-posters-heading h2 {
+  margin-top: 16px;
+}
+.pronite-poster-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(250px, 0.8fr);
+  align-items: start;
+  gap: 24px;
+}
+.pronite-poster {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #101010;
+}
+.pronite-poster img {
+  width: 100%;
+  height: auto;
+}
+.pronite-poster figcaption {
+  padding: 14px 17px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
 .pulse-dot {
   display: inline-block;
   width: 6px;
@@ -2241,6 +2272,11 @@ html[data-motion="paused"] *:after {
   }
   .section {
     padding-block: 72px;
+  }
+  .pronite-poster-grid {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    margin-inline: auto;
   }
   .hero {
     height: 85svh;

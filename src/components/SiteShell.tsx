@@ -20,6 +20,7 @@ const navigation = [
   { label: "Home", href: "/" },
   { label: "Our story", href: "/about" },
   { label: "Events", href: "/events" },
+  { label: "Pronite", href: "/pronite" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
@@ -113,7 +114,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <Link href="/login" onClick={() => setMenuOpen(false)}>
-              <span>06</span>Plan my visit
+              <span>07</span>Plan my visit
               <ArrowUpRight />
             </Link>
           </nav>
@@ -188,6 +189,20 @@ export function SiteFooter() {
               rel="noreferrer"
             >
               Institute website <ArrowUpRight size={13} />
+            </a>
+            <a
+              href="https://whatsapp.com/channel/0029VbB7S5f4tRrjW6Ttim0h"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join WhatsApp channel <ArrowUpRight size={13} />
+            </a>
+            <a
+              href="https://www.instagram.com/elyssia.aiimsk?stkn=amh0YzYxczYybzJ4&utm_source=qr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Follow Instagram <ArrowUpRight size={13} />
             </a>
           </div>
         </div>
