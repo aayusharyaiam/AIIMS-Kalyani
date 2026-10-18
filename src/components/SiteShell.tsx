@@ -71,12 +71,13 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="header-actions">
-            <Link
+            <a
               className="button button-primary header-cta"
-              href="/pronite"
+              href="https://elyssiapayments.shop"
+              target="_blank"
             >
               Get your pass <ArrowUpRight size={16} />
-            </Link>
+            </a>
             <button
               type="button"
               className="icon-button menu-toggle"

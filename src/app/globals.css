@@ -1166,7 +1166,7 @@ html[data-motion="paused"] *:after {
   border: 1px solid #f1a3658c;
   background: linear-gradient(145deg, #f16b3533, #0b0b0be8 58%);
   box-shadow: 0 24px 90px #000b, 0 0 46px #f16b3526;
-  transform: rotate(1.5deg);
+  transform: rotate(0deg);
 }
 .pronite-artist-image {
   aspect-ratio: 4 / 5;
@@ -1294,7 +1294,7 @@ html[data-motion="paused"] *:after {
   border: 1px solid #f1a3658c;
   background: linear-gradient(145deg, #f16b3533, #0b0b0be8 58%);
   box-shadow: 0 24px 90px #000b, 0 0 46px #f16b3526;
-  transform: rotate(1.2deg);
+  transform: rotate(0deg);
 }
 .pronite-featured-poster img {
   width: 100%;

@@ -50,8 +50,8 @@ export default function PronitePage() {
                 </span>
               </div>
             </div>
-            <a
-              href="https://elyssiapayments.shop"
+            {/* <a
+              href="https://elyssiapayments."
               className="button button-primary pronite-buy-pass"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default function PronitePage() {
               <Ticket size={18} />
               Buy Pass
               <ArrowUpRight size={17} />
-            </a>
+            </a> */}
             <p className="pronite-ticket-note">
               Your night starts here. Passes available online.
             </p>
