@@ -13,7 +13,6 @@ import {
   Mail,
 } from "lucide-react";
 import { Modal, Magnetic } from "@/components/ui";
-import { festival } from "@/lib/festival";
 import { MotionToggle } from "@/components/MotionToggle";
 
 const navigation = [
@@ -72,14 +71,12 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="header-actions">
-            <a
+            <Link
               className="button button-primary header-cta"
-              href={festival.registrationUrl}
-              target="_blank"
-              rel="noreferrer"
+              href="/pronite"
             >
               Get your pass <ArrowUpRight size={16} />
-            </a>
+            </Link>
             <button
               type="button"
               className="icon-button menu-toggle"
