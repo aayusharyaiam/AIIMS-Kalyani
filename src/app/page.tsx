@@ -204,8 +204,8 @@ export default function Home() {
           </div>
           <div className="intro-image">
             <MediaImage
-              src="/images/legacy-live-concert.webp"
-              alt="Warm stage lights and a live performance from the Elyssia archives"
+              src="/images/javed.PNG"
+              alt="Javed Ali performing live at Elyssia"
             />
             <div className="image-caption">
               <span>✦</span>THE MOMENTS THAT MAKE US.
