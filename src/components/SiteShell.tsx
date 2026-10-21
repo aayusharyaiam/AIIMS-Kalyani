@@ -13,7 +13,6 @@ import {
   Mail,
 } from "lucide-react";
 import { Modal, Magnetic } from "@/components/ui";
-import { festival } from "@/lib/festival";
 import { MotionToggle } from "@/components/MotionToggle";
 
 const navigation = [
@@ -74,9 +73,8 @@ export function SiteHeader() {
           <div className="header-actions">
             <a
               className="button button-primary header-cta"
-              href={festival.registrationUrl}
+              href="https://elyssiapayments.shop"
               target="_blank"
-              rel="noreferrer"
             >
               Get your pass <ArrowUpRight size={16} />
             </a>

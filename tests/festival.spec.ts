@@ -316,7 +316,7 @@ test("image failures and unavailable browser storage have useful feedback", asyn
   page,
 }) => {
   await page.route("**/_next/image?*", (route) =>
-    route.request().url().includes("legacy-live-concert")
+    route.request().url().includes("https://i.ibb.co/MDPZCn88/DSC01844-1.webp")
       ? route.abort()
       : route.continue(),
   );
@@ -345,7 +345,7 @@ test("image skeletons reflect real loading and motion can be paused", async ({
     releaseImage = resolve;
   });
   await page.route("**/_next/image?*", async (route) => {
-    if (route.request().url().includes("legacy-live-concert")) await gate;
+    if (route.request().url().includes("https://i.ibb.co/MDPZCn88/DSC01844-1.webp")) await gate;
     await route.continue();
   });
   await page.goto("/", { waitUntil: "domcontentloaded" });

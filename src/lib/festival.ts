@@ -431,7 +431,7 @@ export const categories = [
 ];
 export const gallery = [
   {
-    src: "/images/legacy-live-concert.webp",
+    src: "https://i.ibb.co/MDPZCn88/DSC01844-1.webp",
     title: "Nights to remember",
     category: "On stage",
     alt: "A concert stage glowing with warm lights at a previous Elyssia festival",
@@ -455,10 +455,22 @@ export const gallery = [
     alt: "Blue stage lighting illuminating a live concert",
   },
   {
-    src: "/images/legacy-live-art.webp",
-    title: "In the making",
-    category: "Creative moments",
-    alt: "An artist sketching a portrait during an art activity",
+    src: "https://i.ibb.co/qLYP99sn/DSC05662-1.webp",
+    title: "The Drop",
+    category: "On stage",
+    alt: "Blue stage lighting illuminating a live concert",
+  },
+  {
+    src: "https://i.ibb.co/TMG9rBW0/ARY00145-1.webp",
+    title: "Cue the Madness",
+    category: "On stage",
+    alt: "Blue stage lighting illuminating a live concert",
+  },
+  {
+    src: "https://i.ibb.co/d00tZt4v/DSC05680-1.webp",
+    title: "Late Night Savior",
+    category: "On stage",
+    alt: "Blue stage lighting illuminating a live concert",
   },
   {
     src: "/images/legacy-guitarist.webp",
@@ -467,7 +479,7 @@ export const gallery = [
     alt: "A guitarist performing live at the festival",
   },
   {
-    src: "/images/legacy-festival-crowd.webp",
+    src: "https://i.ibb.co/HfB4Bcmw/DSC03479-1.webp",
     title: "A campus, alive",
     category: "Campus life",
     alt: "A crowd gathering beside an illuminated campus building",
@@ -477,6 +489,66 @@ export const gallery = [
     title: "A little harmony",
     category: "Creative moments",
     alt: "A classical instrumental ensemble performing together",
+  },
+  {
+    src: "/images/legacy-live-art.webp",
+    title: "In the making",
+    category: "Creative moments",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/hJwQ5hFw/ARY00012-1.webp",
+    title: "Blindfolded",
+    category: "Creative moments",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/gLHFSpf5/DSC01857-1.webp",
+    title: "Forever Roll Call",
+    category: "Campus life",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/C3MkjWRV/DSC06151-1.webp",
+    title: "The Usual Crew",
+    category: "Campus life",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/cs45rSj/DSC05440-1mb.webp",
+    title: "No Curfew",
+    category: "Campus life",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/Fq8t3YTK/DSC05235-1mb.webp",
+    title: "Side by Side",
+    category: "Campus life",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/jPjvYCt9/DSC-1436-1mb.webp",
+    title: "Echoes from the Quad",
+    category: "Creative moments",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/6RCWc68v/DSC05258-1mb.webp",
+    title: "Chapters in a Dorm Room",
+    category: "Creative moments",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/TxM6jgqJ/DSC-1432-1mb.webp",
+    title: "Chasing the Thesis",
+    category: "Creative moments",
+    alt: "An artist sketching a portrait during an art activity",
+  },
+  {
+    src: "https://i.ibb.co/7JwQRBX3/DSC-1435-1mb.webp",
+    title: "Fluorescent Youth",
+    category: "Creative moments",
+    alt: "An artist sketching a portrait during an art activity",
   },
 ];
 export const faqs = [

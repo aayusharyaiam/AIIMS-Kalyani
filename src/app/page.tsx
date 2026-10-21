@@ -204,8 +204,11 @@ export default function Home() {
           </div>
           <div className="intro-image">
             <MediaImage
+
               src="/images/javed.PNG"
               alt="Javed Ali performing live at Elyssia"
+
+
             />
             <div className="image-caption">
               <span>✦</span>THE MOMENTS THAT MAKE US.
@@ -263,36 +266,37 @@ export default function Home() {
         </div>
       </section>
       <section className="pronite">
-        <MediaImage
-          src="/images/legacy-blue-stage.webp"
-          alt="A blue-lit live stage from a previous edition of Elyssia"
-          className="pronite-background"
-          sizes="100vw"
-        />
-        <div className="container">
-          <Reveal variant="right">
+        <div className="container pronite-feature">
+          <Reveal className="pronite-copy" variant="right">
             <p className="eyebrow">
               <Sparkles size={13} />
-              WHEN THE STARS COME OUT
+              STAR NIGHT · KEY PERFORMER
             </p>
             <h2>
-              THE DAYS ARE EPIC.
+              JAVED
               <br />
-              <span>THE NIGHTS? LEGENDARY.</span>
+              <span>ALI.</span>
             </h2>
             <p>
-              Lose yourself in the lights, the music, and a thousand voices
-              becoming one. Star Night and DJ Night are coming to Elyssia.
+              Get ready for an unforgettable night as Javed Ali brings his
+              unmistakable voice to the Elyssia stage.
             </p>
             <Link href="/events#nightlife" className="button button-outline">
-              Discover the afterhours <ArrowUpRight size={16} />
+              Explore Star Night <ArrowUpRight size={16} />
             </Link>
           </Reveal>
+          <Reveal className="pronite-artist" variant="left">
+            <figure className="pronite-artist-card">
+              <MediaImage
+                src="/images/javed.PNG"
+                alt="Javed Ali featured on the Elyssia 2026 Star Night poster"
+                className="pronite-artist-image"
+                sizes="(max-width: 850px) 90vw, 36vw"
+              />
+              <figcaption>JAVED ALI <span>·</span> LIVE AT ELYSSIA 2026</figcaption>
+            </figure>
+          </Reveal>
         </div>
-        <span className="pronite-label">
-          <span className="pulse-dot" />
-          2026 LINEUP · REVEALING SOON
-        </span>
       </section>
       <section className="section container">
         <Reveal variant="fade" stagger={110}>
