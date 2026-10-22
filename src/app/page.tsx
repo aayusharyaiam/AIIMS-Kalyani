@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  Ticket,
   ArrowRight,
   ArrowUpRight,
   BookOpen,
@@ -85,12 +86,14 @@ export default function Home() {
             <div className="hero-actions">
               <Magnetic>
                 <a
-                  href={festival.registrationUrl}
+                  href="https://elyssiapayments.shop"
+                  className="button button-primary pronite-buy-pass"
                   target="_blank"
-                  rel="noreferrer"
-                  className="button button-primary"
+                  rel="noopener noreferrer"
                 >
-                  Enter the odyssey <ArrowUpRight size={17} />
+                  <Ticket size={18} />
+                  Buy Pass
+                  <ArrowUpRight size={17} />
                 </a>
               </Magnetic>
               <Magnetic>
